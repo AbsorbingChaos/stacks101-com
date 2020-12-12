@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<!-- The landing page of a given section
+ i.e. posts section (/posts/index.html) -->
+
+<section class="section has-background-grey-lighter border-b-1">
+  <div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    <h3 class="subtitle">{{ .Description }}</h3>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
