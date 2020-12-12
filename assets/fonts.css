@@ -1,0 +1,51 @@
+/* START CUSTOM FONTS */
+/* Shout out to Transfonter.org @font-face generator! */
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('/fonts/Raleway-Regular.eot');
+    src: url('/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('/fonts/Raleway-Regular.woff') format('woff'),
+        url('/fonts/Raleway-Regular.ttf') format('truetype'),
+        url('/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('/fonts/Raleway-ExtraBold.eot');
+    src: url('/fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Raleway-ExtraBold.woff') format('woff'),
+        url('/fonts/Raleway-ExtraBold.ttf') format('truetype'),
+        url('/fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('/fonts/Manrope-Regular.eot');
+    src: url('/fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Manrope-Regular.woff2') format('woff2'),
+        url('/fonts/Manrope-Regular.woff') format('woff'),
+        url('/fonts/Manrope-Regular.ttf') format('truetype'),
+        url('/fonts/Manrope-Regular.svg#Manrope-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('/fonts/Manrope-ExtraBold.eot');
+    src: url('/fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Manrope-ExtraBold.woff') format('woff'),
+        url('/fonts/Manrope-ExtraBold.ttf') format('truetype'),
+        url('/fonts/Manrope-ExtraBold.svg#Manrope-ExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* END CUSTOM FONTS */

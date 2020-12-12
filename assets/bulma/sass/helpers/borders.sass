@@ -1,0 +1,35 @@
+// sizing helpers settings
+// sourced from github: jmaczan/bulma-helpers
+// adapted to format of Bulma's spacing.sass
+// NOT WORKING YET / EXPERIMENTAL
+
+.is-borderless
+  border: unset !important
+
+$border-shortcuts: ("border": "border") !default 
+$border-directions: ("top": "t", "right": "r", "bottom": "b", "left": "l") !default
+$border-horizontal: "x" !default
+$border-vertical: "y" !default
+$border-values: ("0": 0, "1": 1px, "2": 2px, "3": 3px, "4": 4px, "5": 5px)
+// add colors from color map for modification
+// add border types: solid/dashed/etc based on spec
+
+@each $property, $shortcut in $border-shortcuts
+  @each $name, $value in $border-values
+    // All directions
+    .#{$shortcut}-#{$name}
+      #{$property}: $value solid $black !important
+    // Cardinal directions
+    @each $direction, $suffix in $border-directions
+      .#{$shortcut}-#{$suffix}-#{$name}
+        #{$property}-#{$direction}: $value solid $black !important
+    // Horizontal axis
+    @if $border-horizontal != null
+      .#{$shortcut}-#{$border-horizontal}-#{$name}
+        #{$property}-left: $value solid $black !important
+        #{$property}-right: $value solid $black !important
+    // Vertical axis
+    @if $border-vertical != null
+      .#{$shortcut}-#{$border-vertical}-#{$name}
+        #{$property}-top: $value solid $black !important
+        #{$property}-bottom: $value solid $black !important
