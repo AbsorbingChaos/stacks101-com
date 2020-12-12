@@ -3,7 +3,7 @@ name: cf-deploy-dev
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
