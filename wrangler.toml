@@ -1,4 +1,13 @@
 name = "stacks101-com"
 type = "webpack"
-account_id = ""
+account_id = "98288619169b23339dc74ce53fa0b5f1"
 workers_dev = true
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[env.production]
+name="stx-prod"
+zone_id = "5dac177a94199ae2735fb60599c00757"
+route = "stacks101.com/*"
