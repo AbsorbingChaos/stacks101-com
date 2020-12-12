@@ -3,10 +3,16 @@
 <!-- The landing page of a given section
  i.e. posts section (/posts/index.html) -->
 
-<section class="section has-background-grey-lighter border-b-1">
-  <div class="container">
-    <h1 class="title">{{ .Title }}</h1>
-    <h3 class="subtitle">{{ .Description }}</h3>
+ <section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ .Title }}
+      </h1>
+      <h2 class="subtitle">
+        {{ .Description }}
+      </h2>
+    </div>
   </div>
 </section>
 
