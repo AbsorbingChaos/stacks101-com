@@ -1,0 +1,15 @@
+<!-- HEAD -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content="Hugo">
+<title>{{ .Site.Params.Title }}</title>
+
+{{ $stacks101CSS := resources.Get "stacks101.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $stacks101CSS.RelPermalink }}">
+
+<!-- Sitemap and RSS -->
+<link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | relURL }}' />
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Params.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Params.Title }}" />
+{{ end }}

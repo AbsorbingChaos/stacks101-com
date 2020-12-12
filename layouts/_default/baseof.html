@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- defaults on all pages -->
+      {{- partial "base-head.html" . -}}
+
+    </head>
+    <body>
+      {{- partial "base-header.html" . -}}
+
+      {{- block "main" . }}
+        <main>
+          This is the main block from the baseof template.<br />
+          You should not be seeing this!
+        </main>
+      {{- end -}}
+
+    {{- partial "base-footer.html" . -}}
+    </body>
+</html>
