@@ -1,0 +1,4 @@
+name = "stacks101-com"
+type = "webpack"
+account_id = ""
+workers_dev = true
