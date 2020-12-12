@@ -1,3 +1,40 @@
-baseURL = "http://example.org/"
+baseURL = "https://stacks101.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = false
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+  blog = "/:year/:month/:slug/"
+  page = "/:slug/"
+
+[params]
+  company = "Stacks 101"
+  title = "Stacks 101"
+  tagline = "Tutorials, lessons, and info about Stacks (STX)"
+  description = "Things that helped me along the way, and hopefully they help you, too!"
+  copyright = "© 2020 Absorbing Chaos"
+
+[params.author]
+  name = "Jason Schrader"
+  github = "https://github.com/whoabuddy"
+  sitename = "Stacks101"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    identifier = "home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+    weight = 20
