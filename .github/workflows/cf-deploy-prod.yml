@@ -1,4 +1,4 @@
-name: cf-deploy-dev
+name: cf-deploy-prod
 
 on:
   push:
