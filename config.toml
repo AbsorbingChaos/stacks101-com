@@ -34,7 +34,12 @@ canonifyURLs = false
     url = "/"
     weight = 10
   [[menu.main]]
-    name = "About"
-    identifier = "about"
-    url = "/about/"
+    name = "Mining FAQ"
+    identifier = "mining-faq"
+    url = "/mining-faq/"
     weight = 20
+  [[menu.main]]
+    name = "Mining Videos"
+    identifier = "mining-videos"
+    url = "/mining-videos/"
+    weight = 30

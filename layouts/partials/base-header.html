@@ -1,21 +1,27 @@
 <div class="container">
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <img src="/favicon-96x96.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
+      width="50" height="50">
+    <a role="button"
+     class="navbar-burger"
+     aria-label="menu" 
+     aria-expanded="false" 
+     data-target="stxNav">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="stxNav" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="/">
-        Home
-      </a>
-      <a class="navbar-item" href="/mining">
-        Mining
-      </a>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+          <a class="navbar-item"
+          href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>        
+      {{ end }}
     </div>
   </div>
 </nav>
