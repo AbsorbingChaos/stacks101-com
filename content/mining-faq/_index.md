@@ -7,4 +7,4 @@ layout: "section"
 
 ## Tips and Tricks
 
-More info coming soon!
+To Do: Add common questions from Discord
