@@ -5,5 +5,6 @@ description: "Keep it simple, stacker."
 layout: "section"
 ---
 
-<h2>Tips and Tricks</h2> 
-<p>More info coming soon!</p>
+## Tips and Tricks
+
+More info coming soon!
