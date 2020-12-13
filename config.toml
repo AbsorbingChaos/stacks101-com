@@ -35,11 +35,21 @@ canonifyURLs = false
     weight = 10
   [[menu.main]]
     name = "Mining FAQ"
-    identifier = "mining-faq"
-    url = "/mining-faq/"
+    identifier = "stx-mining-faq"
+    url = "/stx-mining-faq/"
+    weight = 20
+  [[menu.main]]
+    name = "Mining Resources"
+    identifier = "stx-mining-resources"
+    url = "/stx-mining-resources/"
+    weight = 20
+  [[menu.main]]
+    name = "Mining Setup"
+    identifier = "stx-mining-setup"
+    url = "/stx-mining-setup/"
     weight = 20
   [[menu.main]]
     name = "Mining Videos"
-    identifier = "mining-videos"
-    url = "/mining-videos/"
+    identifier = "stx-mining-videos"
+    url = "/stx-mining-videos/"
     weight = 30
