@@ -18,3 +18,5 @@ layout: "section"
    - Mining-Local-Server
    - Mining-Bot
    - Common issues/pitfalls (constants.ts change)
+
+## Goal: clean and SIMPLE

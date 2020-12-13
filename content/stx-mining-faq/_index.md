@@ -7,52 +7,88 @@ layout: "section"
 
 ## Tips and Tricks
 
-To Do: Add common questions from Discord
+TODO: Insert TOC
 
-First Term
-: This is the definition of the first term.
+### Competition / Registration
 
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.
+**Where do I sign up?**
+: Use the register button on the [competition sign-up page](https://daemontechnologies.co/minestx-challenge), and enter your name, email address, and keychain information (BTC and STX addresses).
 
+-----
+
+**What is a keychain?**
+: A keychain represents a private cryptographic key used to generate your public BTC and STX addresses used with the Stacks 2.0 network.
+
+-----
+
+**How do I generate a keychain?**
+: Generating a keychain requires [Node.js](https://nodejs.dev) as a prerequisite, and afterward there are two packages that help create the keychain. There is also a [video outlining the process](https://youtu.be/82b8PGoQYpI) on Windows.
+: Generate keychain command from the [Stacks documentation](https://docs.blockstack.org/start-mining#running-a-miner):
+: `npx @stacks/cli make_keychain -t > keychain.json`
+: Generate keychain using [stacks-gen](https://github.com/psq/stacks-gen) from Pascal: 
+: `npx -q stacks-gen sk --testnet > keychain.json`
+
+-----
+
+**Do I need to run more than one miner?**
+: No, for the competition only running one miner is needed, and the same person cannot be rewarded twice for participation. For more information, see the [official rules](https://daemontechnologies.co/stx-mining-rules).
+
+-----
+
+**How will the winners be determined?**
+: The winners are determined by two factors: their efficiency ratio and overall distribution.
+: **Efficiency Ratio:** First, we'll calculate how efficiently you mined. This is done by taking the total number of block rewards you earned and dividing it by the total amount of testnet BTC you spent.
+: **Distribution:** With everyone's Efficiency Ratio in hand, we'll compare them to distribute the 200,000 STX pool proportionally to all miners that attempted to mine at least 30% of all blocks during the period.
+: For more information, see the [official rules](https://daemontechnologies.co/stx-mining-rules).
+
+-----
+
+### Using Stacks-Node
 
 What does "Won sortition" mean???
-it means you won leader election
+: it means you won leader election
 
-Each participant can run 1 mining bot per STX/BTC address pair ?
-For the competition it is just one bot per person altogether AFAIK
+Is my configuration file correct?
+: An example of a working configuration file is posted below.
 
-how would i create a P&L statement?
-stx balance is profit, btc balance is loss.
-writing a P&L statement is just recording how much you spend and how much you earn, which you can do per block, per day, per arbitrary time period
+Updated endpoints?
 
-hi, I am trying to register for the testnet mining and it is asking for the testnet BTC & STX addresses. Where can I get those two? thanks for helping
+How long is a block? Just to confirm that each block is 10mins?
 
-Can I use a wallet?
-No matter what wallet I put my 24-word Secret Key in, it shows "zero" everywhere.
+### Using Mining-Bot
 
-how much btc is needed?
-20,000 sats per block attempt
+I have an error, what do I do?
+: post an issue on GitHub
 
-For phase 1 challenge, will there be only 1 winner or some percentages of the most efficient miners?
+### Miscellaneous
 
-What is the correct configuration file?
+**How would I create a Profit and Loss statement?**
+: A P&L statement is just recording how much you spend and how much you earn, which you can do per block, or per any arbitrary time period by checking your BTC and STX balances. 
 
-Do I understand the rules correctly: In order to increase "Efficiency Ratio" within the competition one has to generate BTC testnet transactions from/to registered BTC address?
-Or to rephrase: How can I affect my "Efficiency Ratio" within the competition, to not "game the rules" ?
+**Why do I not see my testnet BTC balance in an explorer?**
+: The Krypton phase of testnet runs on a private BTC regtest server that is separate from the public BTC testnet. Any online block explorers will not be able to find the information.
 
-Is there a minimum internet connection speed required for mining ?
-Faster is better, stable is best, but I'm using 10/2 on a rural wireless connection and successful.
+**Why do I not see my testnet STX balance in the Stacks Wallet?**
+: The Stacks Wallet and other wallets in the ecosystem are using the Xenon phase of testnet, which relies on a different infrastructure.
 
-Hello guys, can I get a confirmation that I don't have to use Daemon's Mining Bot to participate in STX Mining Challenge Part 1? I am going to run a VPS, so I just can't install the Daemon's Mining-Local-Server on it. @Gavin @Xan
+**How much BTC is needed to mine?**
+: The default spent by a miner is 20,000 sats per block it attempted to mine, and testnet blocks on Krypton move at 1 block per 2 minutes (on average).
 
-Hi, I have a Xenon miner running. According to https://docs.blockstack.org/understand-stacks/mining#probability-to-mine-next-block the chances of getting elected to mine the next block increases if the amount of BTC being transferred increases. How can I adjust how much BTC my miner is committing?
+**Is there a minimum internet connection speed required for mining?**
+: Faster is better, stable is best, but I'm using 10/2 on a rural wireless connection and successful.
 
+**Do I have to use Daemon's Mining Bot to participate in STX Mining Challenge Part 1?**
+: No, although it makes things easier and is recommended.
 
-how to check that my miner is running well.. its perfectly fine that after running the miner for 24hrs I've not won any blocks?
+**How can I adjust how much BTC my miner is committing?**
+: By adding the `burn_fee_cap` setting to the configuration under the Burnchain section.
 
-Just to confirm that each block is 10mins?
+**How do I check that my miner is running correctly?**
+: By querying the /v2/info endpoints of your miner against the main krypton one.
+
+-----
+
+### More from Discord:
 
 Hello guys, so right now, I can start setting up and mining in the testnet and during the contest if I successfully mines a testnet block, I will get a reward. Is this correct?
 

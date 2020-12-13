@@ -13,6 +13,8 @@ What should we display about each video?
 - video title
 - link to Youtube
 
+Might need to create a shortcode and combine with Paul Irish lite-youtube embed script.
+
 -----
 
 Coin Bureau: Blockstack (STX): Everything I Found Out!! 🧐
