@@ -43,27 +43,30 @@ TODO: Insert TOC
 
 -----
 
-### Using Stacks-Node
+### Configuring Stacks-Node
 
-What does "Won sortition" mean???
-: it means you won leader election
+**Where to find the latest release?**
+: https://github.com/blockstack/stacks-blockchain/releases/latest
 
-Is my configuration file correct?
-: An example of a working configuration file is posted below.
+**What are the correct endpoints?**
+: A list of all the updated endpoints for Krypton is [available here](/stx-mining-setup/#krypton-information).
 
-Updated endpoints?
+**Is my configuration file correct?**
+: An example of a working configuration file is [available here](/stx-mining-setup/#krypton-configuration-file).
 
-How long is a block? Just to confirm that each block is 10mins?
+**How do I check that my miner is running correctly?**
+: By querying the /v2/info endpoints of your miner against the main krypton one.
+: `http://krypton.blockstack.org:20443/v2/info`
+: `http://localhost:20443/v2/info`
 
-### Using Mining-Bot
+**Should I use my 24 word phrase for the seed value in the config?**
+: No, this should be the hex of the private key, which is a long string provided as part of your keychain.
 
-I have an error, what do I do?
-: post an issue on GitHub
+**The miner config only has the private key as the seed. and does not have the BTC address and STX address. Does the seed infers those addresses so that I do not have to explicitly specify them?**
+: The other way around, the BTC and STX addresses are derived from the seed.  The BTC and STX addresses are actually the same value, encoded differently to make it readable (so knowing one, you can get the other, and vice versa).
 
-### Miscellaneous
-
-**How would I create a Profit and Loss statement?**
-: A P&L statement is just recording how much you spend and how much you earn, which you can do per block, or per any arbitrary time period by checking your BTC and STX balances. 
+**What does "Won sortition" mean?**
+: It means that your miner was selected to create the next block in the Stacks blockchain, and will receive the reward of 1,000 STX after a 100 block maturity time.
 
 **Why do I not see my testnet BTC balance in an explorer?**
 : The Krypton phase of testnet runs on a private BTC regtest server that is separate from the public BTC testnet. Any online block explorers will not be able to find the information.
@@ -74,97 +77,58 @@ I have an error, what do I do?
 **How much BTC is needed to mine?**
 : The default spent by a miner is 20,000 sats per block it attempted to mine, and testnet blocks on Krypton move at 1 block per 2 minutes (on average).
 
-**Is there a minimum internet connection speed required for mining?**
-: Faster is better, stable is best, but I'm using 10/2 on a rural wireless connection and successful.
-
-**Do I have to use Daemon's Mining Bot to participate in STX Mining Challenge Part 1?**
-: No, although it makes things easier and is recommended.
-
 **How can I adjust how much BTC my miner is committing?**
-: By adding the `burn_fee_cap` setting to the configuration under the Burnchain section.
+: If running via the CLI: by adding the `burn_fee_cap` setting to the configuration under the Burnchain section.
+: If running the Mining-Bot: you can adjust the value when you are starting up the miner.
 
-**How do I check that my miner is running correctly?**
-: By querying the /v2/info endpoints of your miner against the main krypton one.
+**How long is a block?**
+: on Krypton, ~2min
+: on Xenon, ~10min (same as normal BTC blocks)
 
------
-
-### More from Discord:
-
-**Where do I see my rewards?**
-: Miners spend Bitcoin (BTC) to earn Stacks (STX), however the rewards are not immediate, it takes 100 blocks for the STX rewards to appear based on the lock-up period.
+**Where do I see my STX rewards?**
+: Miners spend Bitcoin (BTC) to earn Stacks (STX), however the rewards are not immediate, it takes 100 blocks for the STX rewards to appear based on the lock-up period. The command to view the STX rewards is [available here](/stx-mining-setup/#krypton-information).
 
 **Does this look like my miner is running right?**
-: If running on the CLI, look for...
-: If running the Mining-Bot, look for...
+: If running on the CLI, look for `Miner node: starting up, UTXOs found.` when it first starts up.
+: If running the Mining-Bot, the status will be displayed on the web page.
 
-**what is difference between Mining-Local-Server and Mining-Bot?**
-: Mining-Local-Server handles the back-end process of starting and stopping stacks-node.
-: Mining-Bot is the frontend GUI for interacting with a miner.
+### Running stacks-node
 
-**I'm working with a VPS. so it is not local pc. Could there be a problem with that?**
-: Not a problem, but there are some things to adjust.
-: Constants.ts in mining-bot for access (or use ssh port redirect)
-
-**how long do you usually have to mine for before winning a sortition?**
+**How long do you usually have to mine for before winning a sortition?**
 : The node has to catch up with the network first, which takes longer as the chain height increases. check that your node /v2/info endpoint returns the same as the seed node.
 : From there, it's random, and depends on the number of miners participating.
 
-**How many nodes are running in testnet mining challenge ? Where can I see?**
-: Stx node map?
-
-**The miner config only has the private key as the seed. and does not have the BTC address and STX address. Does the seed infers those addresses so that I do not have to explicitly specify them?**
-: the other way around, the BTC and STX addresses are derived from the seed.  The BTC and STX addresses are actually the same value, encoded differently to make it readable (so knowing one, you can get the other, and vice versa)
-
-How to know it started:
-```
-INFO [1607834532.026731] [testnet/stacks-node/src/run_loop/neon.rs:114] [ThreadId(1)] Miner node: checking UTXOs at address: .....
-INFO [1607834535.353418] [testnet/stacks-node/src/run_loop/neon.rs:121] [ThreadId(1)] Miner node: starting up, UTXOs found.
-```
-
-This error is OK:
-```
-convo:id=58,outbound=true,peer=UNKNOWN+UNKNOWN://13.229.109.181:20444: failed to recv on P2P conversation: PermanentlyDrained
-```
+**What happens if I restart my miner?**
+: By default, a folder containing the Stacks blockchain data is created in a temporary folder. Stopping and starting the miner will cause it to start over and have to resync with the network.
 
 **Where is the default working dir? I prob need to manually delete the data there.**
 : default is /tmp on Linux and %temp% on Windows, folders start with stacks_
 : you can add working_dir = "PATH_TO_STORAGE" under [node] in your config file, but it is safer to empty the directory before starting the node, there are some issues restarting with existing data
 
-Friends using Raspberry Pi, how did you solve the storage problem? Are you using an SD card or have you integrated an SSD? Is 32 GB enough for the SD card?
+### Using Mining-Bot
 
-**how can we find block height for Krypton for the contest?**
-: /v2/info
+**Do I have to use Daemon's Mining Bot to participate in STX Mining Challenge Part 1?**
+: No, although it makes things easier and is recommended.
 
-**Where to find the latest release?**
-: https://github.com/blockstack/stacks-blockchain/releases/latest
+**What is difference between Mining-Local-Server and Mining-Bot?**
+: Mining-Local-Server handles the back-end process of starting and stopping stacks-node.
+: Mining-Bot is the frontend GUI for interacting with a miner.
 
-**How do I request tBTC?**
-: Windows: Invoke-Webrequest
-: Mac/Linux: Curl
+**I have an error, what do I do?**
+: post an issue on the [Daemon Technologies GitHub](https://github.com/Daemon-Technologies/Mining-Bot/issues)
 
-----
+### Miscellaneous
 
-Thanks Pascal!
+**How would I create a Profit and Loss statement?**
+: A P&L statement is just recording how much you spend and how much you earn, which you can do per block, or per any arbitrary time period by checking your BTC and STX balances. 
 
-the current tutorials show information for xenon, but if you need krypton info, that you should use for the upcoming mining challenge starting 12/15/20, here are the endpoints to use:
-- miner: krypton.blockstack.org:20444
-- API: stacks-node-api.krypton.blockstack.org (not needed for the miner)
-- bitcoind: bitcoind.krypton.blockstack.org (rpc port is 18443, peer port is 18444)
-No need to run your own bitcoind, as you need to use the one above
-STX faucet: curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx?address=YOUR_STX_ADDRESS
-BTC faucet: curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc?address=YOUR_BTC_ADDRESS
-Check BTC balance: curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/YOUR_BTC_ADDRESS
-Check STX balance: curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/YOUR_STX_ADDRESS/stx
+**Is there a minimum internet connection speed required for mining?**
+: Faster is better, stable is best, but I'm using 10/2 on a rural wireless connection and successful.
 
------
+**I'm working with a VPS. so it is not local pc. Could there be a problem with that?**
+: This is not a problem, but may require additional steps to be able to use the mining-bot.
+: Others have reported success with updating constants.ts to allow a connection outside of localhost.
 
-For those participating in the Daemon Technologies competition, I made a quick video walking through how to create a keychain and register using Windows 10. For Mac/Linux the only difference is to install Node.js via nvm (documented on their website https://nodejs.dev/). The commands to create a keychain are below the video.
-https://youtu.be/82b8PGoQYpI
-
-Generate keychain command from the docs:
-npx @stacks/cli make_keychain -t > keychain.json
-https://docs.blockstack.org/start-mining#running-a-miner
-
-Or you can use stacks-gen:
-npx -q stacks-gen sk --testnet > keychain.json
-https://github.com/psq/stacks-gen
+**What are these P2P errors?**
+: The error below can be safely ignored.
+: `failed to recv on P2P conversation: PermanentlyDrained`

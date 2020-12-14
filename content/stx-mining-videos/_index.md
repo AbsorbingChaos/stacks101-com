@@ -5,10 +5,11 @@ description: "Visual learning at its finest."
 layout: "section"
 ---
 
-## Stacks Videos
-
 {{< lite-yt id="82b8PGoQYpI" title="Freehold: STX Mining - Creating a Keychain on Windows"
  description="A quick 5-minute walkthrough on how to create a keychain on Windows, which includes your private key, BTC address, and STX address." >}}
+
+{< lite-yt id="-JSyESB3-Es" title="Explaining how to register and how to create keychain from Andrzej" 
+ description="This is pretty long one, but it gives broader perspective and instructions for Windows and MacOS." >}}
 
 {{< lite-yt id="N787Ok3l4qs" title="Pair Mining: Jason and Patrick on Mac OSX"
  description="A full walkthrough of setting up stacks-node to mine on Mac OSX. We ran into some issues, but we powered through them and solved everything by the end!" >}}
@@ -21,3 +22,4 @@ layout: "section"
 
 {{< lite-yt id="uSk8t4D2q3w" title="Coin Bureau: Blockstack (STX): Everything I Found Out!!"
  description="A great overview of everything Stacks from a 3rd party perspective." >}}
+ 
