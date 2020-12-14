@@ -64,7 +64,7 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 `Invoke-WebRequest -Method POST -Body (@{"address"="BTCADDR";}) -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc`
 
 **Mac/Linux:**
-`curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc?address=YOUR_BTC_ADDRESS`
+`curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc?address=BTCADDR`
 
 ### Request STX
 
@@ -72,10 +72,7 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 `Invoke-WebRequest -Method POST -Body (@{"address"="STXADDR";}) -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx`
 
 **Mac/Linux:**
-`curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx?address=YOUR_STX_ADDRESS`
-
-
-| BTC balance | ``
+`curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx?address=STXADDR`
 
 ## Wallet Balances
 
@@ -83,10 +80,10 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 
 **Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
 
-**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/YOUR_STX_ADDRESS/stx`
+**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
 
 ### tBTC Balance
 
 **Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
-**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/YOUR_BTC_ADDRESS`
+**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
