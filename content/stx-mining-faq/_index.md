@@ -90,21 +90,30 @@ I have an error, what do I do?
 
 ### More from Discord:
 
-Hello guys, so right now, I can start setting up and mining in the testnet and during the contest if I successfully mines a testnet block, I will get a reward. Is this correct?
+**Where do I see my rewards?**
+: Miners spend Bitcoin (BTC) to earn Stacks (STX), however the rewards are not immediate, it takes 100 blocks for the STX rewards to appear based on the lock-up period.
 
-is this succeeded running mining on testnet? (image of miner - show what it should look like)
+**Does this look like my miner is running right?**
+: If running on the CLI, look for...
+: If running the Mining-Bot, look for...
 
-what is difference between Mining-Local-Server and Mining-Bot? I don't know which one to run.
+**what is difference between Mining-Local-Server and Mining-Bot?**
+: Mining-Local-Server handles the back-end process of starting and stopping stacks-node.
+: Mining-Bot is the frontend GUI for interacting with a miner.
 
-I'm working with a VPS. so it is not local pc. Could there be a problem with that?
+**I'm working with a VPS. so it is not local pc. Could there be a problem with that?**
+: Not a problem, but there are some things to adjust.
+: Constants.ts in mining-bot for access (or use ssh port redirect)
 
-how long do you usually have to mine for before winning a sortition? 
-Your node has to catch up first, which takes longer as the chain height increases, check that your node /v2/info endpoint returns the same as the seed node
+**how long do you usually have to mine for before winning a sortition?**
+: The node has to catch up with the network first, which takes longer as the chain height increases. check that your node /v2/info endpoint returns the same as the seed node.
+: From there, it's random, and depends on the number of miners participating.
 
-How many nodes are running in testnet mining challenge ? Where can I see?
+**How many nodes are running in testnet mining challenge ? Where can I see?**
+: Stx node map?
 
-One more newb question: the miner config only has the private key as the seed. and does not have the BTC address and STX address. Does the seed infers those addresses so that I do not have to explicitly specify them?
-the other way around, the BTC and STX addresses are derived from the seed.  The BTC and STX addresses are actually the same value, encoded differently to make it readable (so knowing one, you can get the other, and vice versa)
+**The miner config only has the private key as the seed. and does not have the BTC address and STX address. Does the seed infers those addresses so that I do not have to explicitly specify them?**
+: the other way around, the BTC and STX addresses are derived from the seed.  The BTC and STX addresses are actually the same value, encoded differently to make it readable (so knowing one, you can get the other, and vice versa)
 
 How to know it started:
 ```
@@ -117,20 +126,21 @@ This error is OK:
 convo:id=58,outbound=true,peer=UNKNOWN+UNKNOWN://13.229.109.181:20444: failed to recv on P2P conversation: PermanentlyDrained
 ```
 
-Where is the default working dir? I prob need to manually delete the data there.
-you can add working_dir = "PATH_TO_STORAGE" under [node] in your config file, but it is safer to empty the directory before starting the node, there are some issues restarting with existing data
+**Where is the default working dir? I prob need to manually delete the data there.**
+: default is /tmp on Linux and %temp% on Windows, folders start with stacks_
+: you can add working_dir = "PATH_TO_STORAGE" under [node] in your config file, but it is safer to empty the directory before starting the node, there are some issues restarting with existing data
 
 Friends using Raspberry Pi, how did you solve the storage problem? Are you using an SD card or have you integrated an SSD? Is 32 GB enough for the SD card?
 
-is there an easy way to deal with this? Also how can we find block height for Krypton for the contest?
-/v2/info ?
+**how can we find block height for Krypton for the contest?**
+: /v2/info
 
-Where to find the latest release?
-https://github.com/blockstack/stacks-blockchain/releases/latest
+**Where to find the latest release?**
+: https://github.com/blockstack/stacks-blockchain/releases/latest
 
-How do I request tBTC?
-Windows: Invoke-Webrequest
-Mac/Linux: Curl
+**How do I request tBTC?**
+: Windows: Invoke-Webrequest
+: Mac/Linux: Curl
 
 ----
 
