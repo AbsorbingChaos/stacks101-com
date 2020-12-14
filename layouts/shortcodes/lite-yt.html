@@ -15,5 +15,9 @@
 </lite-youtube>
 
 {{ if (.Get "description") }}
-  <p>{{ .Get "description" | markdownify }}</p>
+  <article class="message is-dark pt-4">
+    <div class="message-body">
+      {{ .Get "description" | markdownify }}
+    </div>
+  </article>
 {{ end }}
