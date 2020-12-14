@@ -19,7 +19,7 @@ Coin Bureau: Blockstack (STX): Everything I Found Out!! 🧐
 (great overview)
 https://www.youtube.com/watch?v=uSk8t4D2q3w
 
-{{< lite-yt id="uSk8t4D2q3w" >}}
+{{< lite-yt id="uSk8t4D2q3w" title="Coin Bureau: Blockstack (STX): Everything I Found Out!!" >}}
 
 Ethan Tan: Stx Miner setup for Blockstack Testnet (Windows OS)
 (Pair Mining: Ethan Tan and Jason Schrader)
