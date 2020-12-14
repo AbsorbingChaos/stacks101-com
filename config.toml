@@ -26,6 +26,15 @@ canonifyURLs = false
   name = "Jason Schrader"
   github = "https://github.com/whoabuddy"
   sitename = "Stacks101"
+  twitter = "@absorbingchaos"
+
+# used for SEO image tags in head
+[params.logo]
+  img = "img/stacks-nexus-800x400.png"
+  type = "image/png"
+  width = "800"
+  height = "400"
+  alt = "The stacks nexus symbol with the metaverse gradient behind it."
 
 [menu]
   [[menu.main]]
