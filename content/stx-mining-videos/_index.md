@@ -8,7 +8,7 @@ layout: "section"
 {{< lite-yt id="82b8PGoQYpI" title="Freehold: STX Mining - Creating a Keychain on Windows"
  description="A quick 5-minute walkthrough on how to create a keychain on Windows, which includes your private key, BTC address, and STX address." >}}
 
-{< lite-yt id="-JSyESB3-Es" title="Explaining how to register and how to create keychain from Andrzej" 
+{{< lite-yt id="-JSyESB3-Es" title="Explaining how to register and how to create keychain from Andrzej" 
  description="This is pretty long one, but it gives broader perspective and instructions for Windows and MacOS." >}}
 
 {{< lite-yt id="N787Ok3l4qs" title="Pair Mining: Jason and Patrick on Mac OSX"
