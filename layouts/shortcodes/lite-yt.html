@@ -10,9 +10,7 @@
   </h3>
 {{ end }}
 
-<lite-youtube videoid="{{.Get "id"}}">
-  <div class="lty-playbtn"></div>
-</lite-youtube>
+<lite-youtube videoid="{{.Get "id"}}"></lite-youtube>
 
 {{ if (.Get "description") }}
   <article class="message is-dark pt-4">
