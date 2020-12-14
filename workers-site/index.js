@@ -57,6 +57,7 @@ async function handleEvent(event) {
       resp.headers.set("Content-Type", "text/html; charset=utf-8")
     }
     
+    resp.headers.set("Access-Control-Allow-Origin", "https://cloudflareinsights.com")
     resp.headers.set("Content-Security-Policy", "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com")
     resp.headers.set("Permissions-Policy", "fullscreen(self)")
     resp.headers.set("Referrer-Policy", "strict-origin-when-cross-origin")
