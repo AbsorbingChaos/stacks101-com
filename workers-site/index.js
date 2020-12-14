@@ -58,7 +58,7 @@ async function handleEvent(event) {
     }
     
     resp.headers.set("Access-Control-Allow-Origin", "https://cloudflareinsights.com")
-    resp.headers.set("Content-Security-Policy", "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-src: https://www.youtube-nocookie.com; img-src: 'self' https://i.ytimg.com")
+    resp.headers.set("Content-Security-Policy", "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-src https://www.youtube-nocookie.com; img-src 'self' https://i.ytimg.com")
     resp.headers.set("Permissions-Policy", "fullscreen(self)")
     resp.headers.set("Referrer-Policy", "strict-origin-when-cross-origin")
     resp.headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload")
