@@ -14,8 +14,24 @@ $link-visited: $primary;
 $footer-background-color: black;
 $footer-color: white;
 
+// custom CSS
+.header-link,
+.header-link:visited {
+  color: black;
+}
+.header-link:hover,
+.header-link:active {
+  color: $primary;
+}
+.header-link:hover span {
+  display: inline !important;
+}
+
 // Import bulma files
 @import "bulma/bulma-0.9.1.sass";
 
 // Import fork awesome files 
 @import "fork-awesome/fork-awesome.scss";
+
+// Import lite-yt styles
+@import "lite-yt";

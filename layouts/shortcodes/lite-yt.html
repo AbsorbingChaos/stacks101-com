@@ -1,0 +1,21 @@
+{{ if (.Get "title") }}
+  <h3 id="{{ anchorize (.Get "title") }}">
+    <a href="#{{ anchorize (.Get "title") }}"
+      class="header-link">
+      {{ .Get "title" | markdownify }}
+      <span class="icon pl-1 is-hidden">
+        <i class="fa fa-link" aria-hidden="true"></i>
+      </span>
+    </a>
+  </h3>
+{{ end }}
+
+<lite-youtube videoid="{{.Get "id"}}"></lite-youtube>
+
+{{ if (.Get "description") }}
+  <article class="message is-dark pt-4">
+    <div class="message-body">
+      {{ .Get "description" | markdownify }}
+    </div>
+  </article>
+{{ end }}

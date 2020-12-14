@@ -5,33 +5,21 @@ description: "Visual learning at its finest."
 layout: "section"
 ---
 
-## So much content!
+{{< lite-yt id="82b8PGoQYpI" title="Freehold: STX Mining - Creating a Keychain on Windows"
+ description="A quick 5-minute walkthrough on how to create a keychain on Windows, which includes your private key, BTC address, and STX address." >}}
 
-What should we display about each video?
-- cover image
-- runtime
-- video title
-- link to Youtube
+{< lite-yt id="-JSyESB3-Es" title="Explaining how to register and how to create keychain from Andrzej" 
+ description="This is pretty long one, but it gives broader perspective and instructions for Windows and MacOS." >}}
 
-Might need to create a shortcode and combine with Paul Irish lite-youtube embed script.
+{{< lite-yt id="N787Ok3l4qs" title="Pair Mining: Jason and Patrick on Mac OSX"
+ description="A full walkthrough of setting up stacks-node to mine on Mac OSX. We ran into some issues, but we powered through them and solved everything by the end!" >}}
 
------
+{{< lite-yt id="hviSdN95vrw" title="Pair Mining: Jason and Ethan on Windows"
+ description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies." >}}
 
-Coin Bureau: Blockstack (STX): Everything I Found Out!! 🧐
-(great overview)
-https://www.youtube.com/watch?v=uSk8t4D2q3w
+{{< lite-yt id="rtequEoZtM8" title="Pair Mining: Jason and Randy on Windows"
+ description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies." >}}
 
-Ethan Tan: Stx Miner setup for Blockstack Testnet (Windows OS)
-(Pair Mining: Ethan Tan and Jason Schrader)
-https://www.youtube.com/watch?v=hviSdN95vrw&t
-
-STX Mining - Creating a Keychain
-https://www.youtube.com/watch?v=82b8PGoQYpI
-
-Pair Mining: Jason Schrader and Patrick Stanley
-Mac OSX
-https://www.youtube.com/watch?v=N787Ok3l4qs
-
-Set up your Stacks 2.0 node & mining bot and start Stacking Sats!
-(Pair Mining: Jason Schrader and Randy)
-https://www.youtube.com/watch?v=rtequEoZtM8
+{{< lite-yt id="uSk8t4D2q3w" title="Coin Bureau: Blockstack (STX): Everything I Found Out!!"
+ description="A great overview of everything Stacks from a 3rd party perspective." >}}
+ 
