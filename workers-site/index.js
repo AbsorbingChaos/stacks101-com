@@ -62,6 +62,7 @@ async function handleEvent(event) {
     resp.headers.set("Permissions-Policy", "fullscreen(self)")
     resp.headers.set("Referrer-Policy", "strict-origin-when-cross-origin")
     resp.headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload")
+    resp.headers.set("Vary", "Origin")
     resp.headers.set("X-Xss-Protection", "1; mode=block")
     resp.headers.set("X-Frame-Options", "DENY")
     resp.headers.set("X-Content-Type-Options", "nosniff")
