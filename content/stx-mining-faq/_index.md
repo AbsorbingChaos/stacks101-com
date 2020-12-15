@@ -50,8 +50,10 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 
 ### Configuring Stacks-Node
 
-**Where to find the latest release?**
-: https://github.com/blockstack/stacks-blockchain/releases/latest
+**Where to find the release for Krypton?**
+: https://github.com/blockstack/stacks-blockchain/releases/tag/v23.0.0.12-krypton
+: If using the CLI, run `git clone` as you normally would, then run:
+: `git checkout tags/v23.0.0.12-krypton`
 
 -----
 
