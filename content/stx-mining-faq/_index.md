@@ -51,9 +51,10 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 ### Configuring Stacks-Node
 
 **Where to find the release for Krypton?**
-: [v23.0.0.12-krypton release](https://github.com/blockstack/stacks-blockchain/releases/tag/v23.0.0.12-krypton)
+: [v24.0.0.0-xenon release](https://github.com/blockstack/stacks-blockchain/releases/tag/v24.0.0.0-xenon)
 : If using the CLI, run `git clone` as you normally would, then run:
-: `git checkout tags/v23.0.0.12-krypton`
+: `git checkout v24.0.0.0-xenon`
+: *Note: the release tag says `Xenon` but the config file will tell the node to connect to the `Krypton` testnet network.
 
 -----
 
