@@ -16,6 +16,11 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 
 -----
 
+**Can I sign up after the competition starts?**
+: Yes, but to be eligible at the end you must mine at least 30% of the total blocks produced over the course of the competition. For more information, see the [official rules](https://daemontechnologies.co/stx-mining-rules).
+
+-----
+
 **What is a keychain?**
 : A keychain represents a private cryptographic key used to generate your public BTC and STX addresses used with the Stacks 2.0 network.
 
