@@ -60,6 +60,11 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 
 -----
 
+**Do I need to open any ports?**
+: No, this is not necessary for miner operation, it is designed to work behind a NAT connection.
+
+-----
+
 **Should I use my 24 word phrase for the seed value in the config?**
 : No, this should be the hex of the private key, which is a long string provided as part of your keychain.
 
