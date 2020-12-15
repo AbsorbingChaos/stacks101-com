@@ -36,16 +36,16 @@ peer_host = "bitcoind.krypton.blockstack.org"
 rpc_port = 18443
 peer_port = 18444
 
-[[mstx_balance]]
+[[ustx_balance]]
 address = "STB44HYPYAT2BB2QE513NSP81HTMYWBJP02HPGK6"
 amount = 10000000000000000
-[[mstx_balance]]
+[[ustx_balance]]
 address = "ST11NJTTKGVT6D1HY4NJRVQWMQM7TVAR091EJ8P2Y"
 amount = 10000000000000000
-[[mstx_balance]]
+[[ustx_balance]]
 address = "ST1HB1T8WRNBYB0Y3T7WXZS38NKKPTBR3EG9EPJKR"
 amount = 10000000000000000
-[[mstx_balance]]
+[[ustx_balance]]
 address = "STRYYQQ9M8KAF4NS7WNZQYY59X93XEKR31JP64CP"
 amount = 10000000000000000
 ```
@@ -64,7 +64,7 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 `Invoke-WebRequest -Method POST -Body (@{"address"="BTCADDR";}) -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc`
 
 **Mac/Linux:**
-`curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc?address=BTCADDR`
+`curl -sS -X POST "https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc?address=BTCADDR"`
 
 ### Request STX
 
@@ -72,7 +72,7 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 `Invoke-WebRequest -Method POST -Body (@{"address"="STXADDR";}) -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx`
 
 **Mac/Linux:**
-`curl -sS -X POST https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx?address=STXADDR`
+`curl -sS -X POST "https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/stx?address=STXADDR"`
 
 ## Wallet Balances
 
