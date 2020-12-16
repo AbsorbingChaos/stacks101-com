@@ -87,3 +87,13 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 **Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
 **Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
+
+## Automated Setup
+
+[This repository](https://github.com/AbsorbingChaos/bks-setup-miner) contains a simple shell script that will help you set up and run a Miner Node on the Stacks 2.0 Testnet.
+
+It is designed for and used with with Ubuntu 20.04 LTS on a virtual machine, please be sure to:
+
+- read the README before using
+- do **not** run as `root` user
+- [file an issue](https://github.com/AbsorbingChaos/bks-setup-miner/issues) if you run into a problem
