@@ -1,0 +1,15 @@
+<div class="box card resource-card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{ .Get "title" | markdownify }}
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      {{ .Get "desc" | markdownify }}
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="{{ .Get "link" }}" class="card-footer-item">View</a>
+  </footer>
+</div>

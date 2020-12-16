@@ -30,7 +30,7 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 : Generating a keychain requires [Node.js](https://nodejs.dev) as a prerequisite, and afterward there are two packages that help create the keychain. There is also a [video outlining the process](https://youtu.be/82b8PGoQYpI) on Windows.
 : Generate keychain command from the [Stacks documentation](https://docs.blockstack.org/start-mining#running-a-miner):
 : `npx @stacks/cli make_keychain -t > keychain.json`
-: Generate keychain using [stacks-gen](https://github.com/psq/stacks-gen) from Pascal: 
+: Generate keychain using [stacks-gen](https://github.com/psq/stacks-gen) from Pascal:
 : `npx -q stacks-gen sk --testnet > keychain.json`
 
 -----
@@ -51,9 +51,10 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 ### Configuring Stacks-Node
 
 **Where to find the release for Krypton?**
-: https://github.com/blockstack/stacks-blockchain/releases/tag/v23.0.0.12-krypton
+: [v24.0.0.0-xenon release](https://github.com/blockstack/stacks-blockchain/releases/tag/v24.0.0.0-xenon)
 : If using the CLI, run `git clone` as you normally would, then run:
-: `git checkout tags/v23.0.0.12-krypton`
+: `git checkout v24.0.0.0-xenon`
+: *Note: the release tag says `Xenon` but the config file will tell the node to connect to the `Krypton` testnet network.
 
 -----
 
@@ -168,7 +169,7 @@ This FAQ represents common questions from Discord and other outlets, and is a su
 ### Miscellaneous
 
 **How would I create a Profit and Loss statement?**
-: A P&L statement is just recording how much you spend and how much you earn, which you can do per block, or per any arbitrary time period by checking your BTC and STX balances. 
+: A P&L statement is just recording how much you spend and how much you earn, which you can do per block, or per any arbitrary time period by checking your BTC and STX balances.
 
 -----
 
