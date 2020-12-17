@@ -5,6 +5,16 @@ description: "Keep it simple, stacker."
 layout: "section"
 ---
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Tips and Tricks](#tips-and-tricks)
+  - [Competition / Registration](#competition--registration)
+  - [Configuring Stacks-Node](#configuring-stacks-node)
+  - [Running stacks-node](#running-stacks-node)
+  - [Using Mining-Bot](#using-mining-bot)
+  - [Miscellaneous](#miscellaneous)
+
 ## Tips and Tricks
 
 This FAQ represents common questions from Discord and other outlets, and is a supplement to the [official FAQ](https://daemontechnologies.co/minestx-challenge#faq) from Daemon Technologies.
