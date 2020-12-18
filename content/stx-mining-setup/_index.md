@@ -28,6 +28,11 @@ bootstrap_node = "048dd4f26101715853533dee005f0915375854fd5be73405f679c1917a5d4d
 # Enter your private key here!
 seed = "replace-with-your-private-key"
 miner = true
+# uncomment to add a working directory
+# that saves chainstate info, but
+# may cause errors if data corrupted
+# default is /tmp/stacks-testnet-random
+# working_dir = /path/to/working/dir
 
 [burnchain]
 chain = "bitcoin"
@@ -35,20 +40,27 @@ mode = "krypton"
 peer_host = "bitcoind.krypton.blockstack.org"
 rpc_port = 18443
 peer_port = 18444
+# uncomment to change burn fee cap
+# burn_fee_cap = 20000
 
-[[ustx_balance]]
+# note this needs to be mstx NOT ustx
+# when using Krypton with tagged version
+# 24.0.0.0-xenon for the competition
+[[mstx_balance]]
 address = "STB44HYPYAT2BB2QE513NSP81HTMYWBJP02HPGK6"
 amount = 10000000000000000
-[[ustx_balance]]
+[[mstx_balance]]
 address = "ST11NJTTKGVT6D1HY4NJRVQWMQM7TVAR091EJ8P2Y"
 amount = 10000000000000000
-[[ustx_balance]]
+[[mstx_balance]]
 address = "ST1HB1T8WRNBYB0Y3T7WXZS38NKKPTBR3EG9EPJKR"
 amount = 10000000000000000
-[[ustx_balance]]
+[[mstx_balance]]
 address = "STRYYQQ9M8KAF4NS7WNZQYY59X93XEKR31JP64CP"
 amount = 10000000000000000
 ```
+
+You can also [download a copy](https://raw.githubusercontent.com/AbsorbingChaos/bks-setup-miner/master/krypton-miner-conf.toml) of the Krypton configuration file from GitHub.
 
 ## Faucet Requests
 
@@ -78,15 +90,19 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 
 ### STX Balance
 
-**Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
+**Windows:**
+`Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
 
-**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
+**Mac/Linux:**
+`curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
 
 ### tBTC Balance
 
-**Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
+**Windows:**
+`Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
-**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
+**Mac/Linux:**
+`curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
 ## Automated Setup
 
