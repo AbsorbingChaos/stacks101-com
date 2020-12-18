@@ -90,15 +90,19 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 
 ### STX Balance
 
-**Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
+**Windows:**
+`Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
 
-**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
+**Mac/Linux:**
+`curl https://stacks-node-api.krypton.blockstack.org/extended/v1/address/STXADDR/stx`
 
 ### tBTC Balance
 
-**Windows:** `Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
+**Windows:**
+`Invoke-WebRequest -Uri https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
-**Mac/Linux:** `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
+**Mac/Linux:**
+`curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
 ## Automated Setup
 
