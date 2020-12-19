@@ -1,0 +1,17 @@
+{{ if .Get "param" }}
+  {{ if eq (.Get "param") ("start-columns") }}
+    <div class="columns is-desktop">
+  {{ else if eq (.Get "param") ("end-columns") }}
+    </div>
+  {{ end }}
+{{ else }}
+  {{ if eq (.Get "param") ("start-column") }}
+    <div class="column">
+  {{ else if eq (.Get "param") ("end-column") }}
+    </div>
+  {{ end }}
+{{ end }}
+
+
+
+
