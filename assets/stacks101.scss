@@ -26,6 +26,9 @@ $footer-color: white;
 .header-link:hover span {
   display: inline !important;
 }
+.content h2 {
+  border-bottom: 1px solid black;
+}
 .resource-card {
   max-width: 600px !important;
 }
