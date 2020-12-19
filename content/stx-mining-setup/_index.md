@@ -5,6 +5,16 @@ description: "Keep it simple, stacker."
 layout: "section"
 ---
 
+## Mining Bot Setup
+
+The recent release of Mining-Bot greatly simplifies the process of both getting a Stacks miner node online as well as reviewing the associated information.
+
+- [Mining-Bot Release on GitHub](https://github.com/Daemon-Technologies/Mining-Bot/releases/latest)
+
+More information on installation and usage can be found in the [walkthrough videos linked here](/mining-videos#mining-bot).
+
+*Note: If you are using **Windows** the Mining-Bot requires [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) to correctly operate.
+
 ## Krypton Information
 
 The current Stacks testnet has transitioned to a new phase (Xenon), but the competition will run on a slightly older infrastructure based on the Krypton phase.
@@ -104,11 +114,11 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 **Mac/Linux:**
 `curl https://stacks-node-api.krypton.blockstack.org/extended/v1/faucets/btc/BTCADDR`
 
-## Automated Setup
+## Automated CLI Setup
 
-[This repository](https://github.com/AbsorbingChaos/bks-setup-miner) contains a simple shell script that will help you set up and run a Miner Node on the Stacks 2.0 Testnet.
+[This repository](https://github.com/AbsorbingChaos/bks-setup-miner) contains a simple shell script that will help you set up and run a Miner Node on the Stacks 2.0 Testnet. It **does not** include the Mining-Bot, and is designed for and used with with Ubuntu 20.04 LTS on a virtual machine.
 
-It is designed for and used with with Ubuntu 20.04 LTS on a virtual machine, please be sure to:
+Please be sure to:
 
 - read the README before using
 - do **not** run as `root` user
