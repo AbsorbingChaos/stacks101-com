@@ -1,6 +1,6 @@
 <div class="box card resource-card">
   <header class="card-header">
-    <p class="card-header-title">
+    <p class="card-header-title is-size-5">
       {{ .Get "title" | markdownify }}
     </p>
   </header>
@@ -10,6 +10,6 @@
     </div>
   </div>
   <footer class="card-footer">
-    <a href="{{ .Get "link" }}" class="card-footer-item">View</a>
+    <a href="{{ .Get "link" }}" class="card-footer-item button">View</a>
   </footer>
 </div>
