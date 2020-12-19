@@ -106,7 +106,7 @@ layout: "section"
 : [v24.0.0.0-xenon release](https://github.com/blockstack/stacks-blockchain/releases/tag/v24.0.0.0-xenon)
 : If using the CLI, run `git clone` as you normally would, then run:
 : `git checkout v24.0.0.0-xenon`
-: *Note: the release tag says `Xenon` but the config file will tell the node to connect to the `Krypton` testnet network.
+: *Note: the release tag says `Xenon` but the config file will tell the node to connect to the `Krypton` testnet network.*
 
 -----
 
