@@ -11,6 +11,14 @@ The recent release of Mining-Bot greatly simplifies the process of both getting 
 
 - [Mining-Bot Release on GitHub](https://github.com/Daemon-Technologies/Mining-Bot/releases/latest)
 
+Using the Mining-Bot allows you to complete the following from a web interface:
+
+- download stacks-node for use with the Mining-Bot
+- manage BTC/STX wallet info and faucet requests
+- set the burn fee used while mining
+- view statistics about the chain
+- view statistics about other miners
+
 More information on installation and usage can be found in the [walkthrough videos linked here](/mining-videos#mining-bot).
 
 *Note: If you are using **Windows** the Mining-Bot requires [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) to correctly operate.
