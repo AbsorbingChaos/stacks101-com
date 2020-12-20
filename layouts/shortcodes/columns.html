@@ -4,14 +4,4 @@
   {{ else if eq (.Get "param") ("end-columns") }}
     </div>
   {{ end }}
-{{ else }}
-  {{ if eq (.Get "param") ("start-column") }}
-    <div class="column">
-  {{ else if eq (.Get "param") ("end-column") }}
-    </div>
-  {{ end }}
 {{ end }}
-
-
-
-
