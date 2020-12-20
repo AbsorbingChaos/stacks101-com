@@ -19,7 +19,7 @@ Using the Mining-Bot allows you to complete the following from a web interface:
 - view statistics about the chain
 - view statistics about other miners
 
-More information on installation and usage can be found in the [walkthrough videos linked here](/mining-videos#mining-bot).
+More information on installation and usage can be found in the [walkthrough videos linked here](/stx-mining-videos/#mining-bot).
 
 *Note: If you are using **Windows** the Mining-Bot requires [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) to correctly operate.*
 
@@ -124,7 +124,9 @@ For all commands below, replace `BTCADDR` or `STXADDR` with your testnet BTC/STX
 
 ## Automated CLI Setup
 
-[This repository](https://github.com/AbsorbingChaos/bks-setup-miner) contains a simple shell script that will help you set up and run a Miner Node on the Stacks 2.0 Testnet. It **does not** include the Mining-Bot, and is designed for and used with with Ubuntu 20.04 LTS on a virtual machine.
+[This repository](https://github.com/AbsorbingChaos/bks-setup-miner) contains a simple shell script that will help you set up and run a Miner Node on the Stacks 2.0 Testnet.
+
+It **does not** include the Mining-Bot, and is designed for and used with with Ubuntu 20.04 LTS on a virtual machine, or Windows WSL with Ubuntu 20.04 installed.
 
 Please be sure to:
 
