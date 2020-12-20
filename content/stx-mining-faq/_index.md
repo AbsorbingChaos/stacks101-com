@@ -18,6 +18,9 @@ layout: "section"
 
 ## Daemon Technologies Competition
 
+{{< notification params="is-info is-light"
+ content="Note: The official Daemon Technologies FAQ can be found in <a href=\"https://daemon-technologies.github.io/docs/Mining-Bot-Alpha-Version/FAQ/\" rel=\"noopener\" target=\"_blank\">the Mining-Bot Documentation.</a>" >}}
+
 ### Important Considerations
 
 **Should I use the Blockstack / Stacks documentation?**
@@ -78,8 +81,8 @@ layout: "section"
 ### Using Mining-Bot
 
 **Do I have to use Daemon's Mining Bot to participate in STX Mining Challenge Part 1?**
-: No, however it is recommended.
-: The Mining-Bot simplifies the process of running a node and analyzing the related data.
+: No, however it is recommended. The Mining-Bot simplifies the process of running a node and analyzing the related data.
+: If you plan to use stacks-node independent of the Mining-Bot or require a CLI configuration, [there is a script]((/stx-mining-setup/#automated-cli-setup)) for automated setup on Ubuntu Server 20.04 that works with Windows WSL.
 
 -----
 
@@ -197,9 +200,15 @@ layout: "section"
 
 -----
 
-**Where is the default working dir? I prob need to manually delete the data there.**
-: default is /tmp on Linux and %temp% on Windows, folders start with stacks_
-: you can add working_dir = "PATH_TO_STORAGE" under [node] in your config file, but it is safer to empty the directory before starting the node, there are some issues restarting with existing data
+**Where is the default working dir?**
+: default is `/tmp` on Linux and `c:\tmp` on Windows, and the folders start with `stacks-testnet-`
+: you can add working_dir = "PATH_TO_STORAGE" under [node] in your config file, but it is safer to empty the directory before starting the node, there are some known issues restarting with existing data
+
+-----
+
+**Can I / should I / how do I delete the working dir data?**
+: If you are not using the working_dir setting in your config, every time you run the miner a new folder will be created in the temporary folder for the chain state and the sync progress will reset to 0. This should not use up a lot of resources however older folders can be safely deleted.
+: *Note: Linux clears the `/tmp` folder on reboot, however Windows *does not* automatically clear the `c:\tmp` folder.
 
 ### Miscellaneous
 
@@ -215,8 +224,8 @@ layout: "section"
 
 **I'm working with a VPS, not a local PC. Could there be a problem with that?**
 : This is not directly a problem, however it does change how you interact with the node.
-: If running on the CLI, you will need either SSH port forwarding or to expose ports TCP 20443/20444 to be able to query the endpoints of your miner.
-: If running the Mining-Bot, a VPS is not supported at this time, but others have reported success with updating constants.ts to allow a connection outside of localhost.
+: If running on the CLI, you will need either SSH port forwarding or to expose ports TCP 20443/20444 to be able to query the endpoints of your miner, such as v2/info.
+: If running the Mining-Bot, a VPS is not supported at this time, but others have reported success with running the Mining-Bot as-is and accessing it via the remote IP address at port 8000. If that doesn't work, some have reported success with updating constants.ts to allow a connection outside of localhost.
 : *Note: this is not a recommended configuration. The system requirements for running stacks-node are very light and should work with any home computer.*
 
 -----

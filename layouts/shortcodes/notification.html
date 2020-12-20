@@ -1,0 +1,3 @@
+<div class="notification {{ if .Get "params" }}{{ .Get "params" }}{{ end }}">
+  <p>{{ if .Get "content" }}{{ .Get "content" | safeHTML }}{{ end }}</p>
+</div>
