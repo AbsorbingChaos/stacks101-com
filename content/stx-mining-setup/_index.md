@@ -31,8 +31,8 @@ Please note some of the key differences below!
 
 | Resources | Value |
 | --- | --- |
-| Miner | `krypton.blockstack.org:20444` | 
-| Miner Status | `http://krypton.blockstack.org:20443/v2/info` | 
+| Miner | `krypton.blockstack.org:20444` |
+| Miner Status | `http://krypton.blockstack.org:20443/v2/info` |
 | API   | `stacks-node-api.krypton.blockstack.org` |
 | bitcoind | `bitcoind.krypton.blockstack.org` |
 
