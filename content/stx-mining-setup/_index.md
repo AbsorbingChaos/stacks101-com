@@ -21,7 +21,7 @@ Using the Mining-Bot allows you to complete the following from a web interface:
 
 More information on installation and usage can be found in the [walkthrough videos linked here](/stx-mining-videos/#mining-bot).
 
-*Note: If you are using **Windows** the Mining-Bot requires [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) to correctly operate.*
+*Note: If you are using **Windows** the Mining-Bot requires [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) **version 2** to correctly operate. More info can be [found in the FAQ](/stx-mining-faq/#what-operating-systems-are-supported).*
 
 ## Krypton Information
 
