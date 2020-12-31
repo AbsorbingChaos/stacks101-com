@@ -151,4 +151,4 @@ STZQC4PW1GW6JKDSVEQN3VY6J54WMHZHCZS96428,mmJWK3NkPqRUhGh5HFeZ1nQCqiqa2FrZSY,4,12
 STZYY6PRBCNWYXPY1GVN1T00B6E61BAKK2NN68N7,mmM1JSGjMqykTWxCcoaZJQ2vE22C5QfUSN,1,17,452,0.08%,3.76%,9040000,0.23%,20000
 ```
 
-To view an animation of copying and pasting this information, [click here to open](/img/stacks-dump.gif) a (fairly large) gif file.
+To view an animation of copying and pasting this information, [click here to open](/stx-mining-stacksdump/example/) a (fairly large) gif file.
