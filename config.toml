@@ -51,14 +51,19 @@ canonifyURLs = false
     name = "Mining Resources"
     identifier = "stx-mining-resources"
     url = "/stx-mining-resources/"
-    weight = 20
+    weight = 30
   [[menu.main]]
     name = "Mining Setup"
     identifier = "stx-mining-setup"
     url = "/stx-mining-setup/"
-    weight = 20
+    weight = 40
   [[menu.main]]
     name = "Mining Videos"
     identifier = "stx-mining-videos"
     url = "/stx-mining-videos/"
-    weight = 30
+    weight = 50
+  [[menu.main]]
+    name = "Stacks Dump"
+    identifier = "stx-mining-stacksdump"
+    url = "/stx-mining-stacksdump/"
+    weight = 60
