@@ -21,13 +21,14 @@ layout: "section"
 
 ## Mining Bot
 
+{{< lite-yt id="YEYfR3nEKPI" title="STX Mining - Install Mining Bot on Windows"
+ description="A full walkthrough of installing WSL on Windows 10 with Ubuntu, followed by installing and configuring Mining-Bot." >}}
+
 {{< lite-yt id="TCtCTttsSeI" title="Setup Mining-Bot Alpha 1.0.0 Release on Mac OSX"
  description="A demonstration of the installation and setup of Mining-Bot on OSX to run a Stacks Node." >}}
 
 {{< lite-yt id="FXifFx0Akzc" title="Setup Mining-Bot Alpha 1.0.0 Release on Windows"
  description="A demonstration of the installation and setup of Mining-Bot on Windows to run a Stacks Node." >}}
-
-*Note: a second video outlining the installation of Windows Subsystem for Linux (WSL) and running the Mining-Bot will be released very soon!*
 
 ## Pair Mining (Freehold)
 
