@@ -19,7 +19,7 @@ canonifyURLs = false
   company = "Stacks 101"
   title = "Stacks 101"
   tagline = "Tutorials, lessons, and info about Stacks (STX)"
-  description = "Things that helped me along the way, and hopefully they help you, too!"
+  description = "Stacks mining tips and tricks that helped me along the way, and hopefully they help you, too!"
   copyright = "© 2020 Absorbing Chaos"
 
 [params.author]
