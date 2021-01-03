@@ -48,19 +48,19 @@ canonifyURLs = false
     url = "/stx-mining-faq/"
     weight = 20
   [[menu.main]]
-    name = "Community Resources"
-    identifier = "stx-mining-community-resources"
-    url = "/stx-mining-community-resources/"
-    weight = 30
-  [[menu.main]]
     name = "Mining Setup"
     identifier = "stx-mining-setup"
     url = "/stx-mining-setup/"
-    weight = 40
+    weight = 30
   [[menu.main]]
     name = "Mining Videos"
     identifier = "stx-mining-videos"
     url = "/stx-mining-videos/"
+    weight = 40
+  [[menu.main]]
+    name = "Community Resources"
+    identifier = "stx-mining-community-resources"
+    url = "/stx-mining-community-resources/"
     weight = 50
   [[menu.main]]
     name = "Stacks Dump"
