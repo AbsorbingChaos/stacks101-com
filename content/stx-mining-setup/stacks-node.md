@@ -46,7 +46,7 @@ reference to all config options in docs
     desc="A walkthrough for setting up and interacting with bitcoind for use with stacks-node."
     link="/stx-mining-setup/bitcoin-node" >}}
   {{< resource-card title="Stacks Node"
-    desc="A walkthrough for setting up stacks-node and configuring it for the competition."
+    desc="A walkthrough for setting up stacks-node and configuring it for mining."
     link="/stx-mining-setup/stacks-node" >}}
   {{< resource-card title="Stacks Keychain"
     desc="A walkthrough of setting up a stacks keychain using various tools."

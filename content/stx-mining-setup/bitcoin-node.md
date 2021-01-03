@@ -77,7 +77,7 @@ The easiest way to interact with `bitcoind` is to use `bitcoin-cli`. There are v
 | --- | --- |
 | Get blockchain info including sync progress | `getblockchaininfo` |
 | Import wallet address for checking UTXOs | `importaddress` |
-| Import private key | `importprivkey` |
+| Import private key for making transactions | `importprivkey` |
 | Get wallet info | `getwalletinfo` |
 | See wallet transactions | `listunspent` |
 | See adresses in wallet | `listaddressgroupings` |
@@ -144,7 +144,7 @@ bitcoin-cli-stx getblockchaininfo
     desc="A walkthrough for setting up and interacting with bitcoind for use with stacks-node."
     link="/stx-mining-setup/bitcoin-node" >}}
   {{< resource-card title="Stacks Node"
-    desc="A walkthrough for setting up stacks-node and configuring it for the competition."
+    desc="A walkthrough for setting up stacks-node and configuring it for mining."
     link="/stx-mining-setup/stacks-node" >}}
   {{< resource-card title="Stacks Keychain"
     desc="A walkthrough of setting up a stacks keychain using various tools."
