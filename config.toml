@@ -48,9 +48,9 @@ canonifyURLs = false
     url = "/stx-mining-faq/"
     weight = 20
   [[menu.main]]
-    name = "Mining Resources"
-    identifier = "stx-mining-resources"
-    url = "/stx-mining-resources/"
+    name = "Community Resources"
+    identifier = "stx-mining-community-resources"
+    url = "/stx-mining-community-resources/"
     weight = 30
   [[menu.main]]
     name = "Mining Setup"
