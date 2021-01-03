@@ -41,18 +41,14 @@ layout: "section"
   {{< resource-card title="StacksPack"
     desc="A Stacks blockchain miner or follower node for Raspberry Pi and similar."
     link="https://gitlab.com/riot.ai/stackspack" >}}
-{{< columns param="end-columns" >}}
-
-{{< columns param="start-columns" >}}
   {{< resource-card title="Stacks-Gen"
     desc="Generate all the keys needed for use with Stacks 2.0 mining and stacking."
     link="https://github.com/psq/stacks-gen" >}}
+{{< columns param="end-columns" >}}
+{{< columns param="start-columns" >}}
   {{< resource-card title="Stacks-Dump"
     desc="Tool to dump info from stacks-node storage for analyzing the blockchain."
     link="https://github.com/psq/stacks-dump" >}}
-{{< columns param="end-columns" >}}
-
-{{< columns param="start-columns" >}}
   {{< resource-card title="Stackulator"
     desc="Stacking calculator to help calculate what you can earn through stacking."
     link="https://www.stxstacking.com/" >}}
