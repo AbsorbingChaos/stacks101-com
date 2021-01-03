@@ -114,7 +114,8 @@ password = "your-bitcoind-password"
 rpc_port = 18332
 peer_port = 18333
 # uncomment the line below to customize burn fees
-burn
+# burnchain_op_tx_fee = 11000
+# burn_fee_cap = 20000
 
 [[ustx_balance]]
 address = "STB44HYPYAT2BB2QE513NSP81HTMYWBJP02HPGK6"
