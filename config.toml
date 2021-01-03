@@ -52,6 +52,24 @@ canonifyURLs = false
     identifier = "stx-mining-setup"
     url = "/stx-mining-setup/"
     weight = 30
+    [[menu.main]]
+      parent = "stx-mining-setup"
+      name = "Bitcoin Node"
+      identifier = "stx-mining-setup-bitcoin"
+      url = "/stx-mining-setup/bitcoin-node"
+      weight = 10
+    [[menu.main]]
+      parent = "stx-mining-setup"
+      name = "Stacks Node"
+      identifier = "stx-mining-setup-stacks"
+      url = "/stx-mining-setup/stacks-node"
+      weight = 20
+    [[menu.main]]
+      parent = "stx-mining-setup"
+      name = "Stacks Keychain"
+      identifier = "stx-mining-setup-keychain"
+      url = "/stx-mining-setup/stacks-keychain"
+      weight = 30
   [[menu.main]]
     name = "Mining Videos"
     identifier = "stx-mining-videos"
