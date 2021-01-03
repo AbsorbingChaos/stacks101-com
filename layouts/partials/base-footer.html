@@ -1,5 +1,28 @@
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>{{ .Site.Params.Copyright }}</p>
+    <div class="columns">
+      <div class="column">
+        <p>Designed with ♥ by <a class="is-link footer-link" href="https://github.com/whoabuddy" rel="noopener" target="_blank">@whoabuddy</a> as a collection of resources built while assisting others in the <a class="is-link footer-link" href="https://community.blockstack.org/" rel="noopener" target="_blank">Stacks Community</a>.</p>
+        <p>Thank you to everyone who contributed content, assisted others, provided advice, and made this possible!</p>
+      </div>
+      <div class="column">
+        <p class="is-title">Navigation</p>
+        <div class="columns is-flex-direction-column">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          <div class="column">
+            <a class="is-link footer-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="column">
+          <p><a class="is-link footer-link" href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+          <p><a class="is-link footer-link" href="https://bulma.io" target="_blank" rel="noopener">Styled with Bulma</a></p>
+          <p><a class="is-link footer-link" href="https://workers.cloudflare.com" target="_blank" rel="noopener">Deployed via Cloudflare</a></p>
+          <p><a class="is-link footer-link" href="https://github.com/absorbingchaos/stacks101-com/" target="_blank" rel="noopener">Page last updated {{ .Lastmod.Format "2006-01-02" }}</a></p>
+          <p>{{ .Site.Params.Copyright }}</p>
+      </div>
+    </div>
   </div>
 </footer>
