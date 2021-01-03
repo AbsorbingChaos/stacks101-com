@@ -53,6 +53,11 @@ server=1
 daemon=1
 rpcuser=replace-with-your-bitcoind-username
 rpcpassword=replace-with-your-bitcoind-password
+rpcallowip=127.0.0.1
+# use the below settings at your own risk, as it
+# opens up bitcoind to access from any IP address
+# rpcallowip=0.0.0.0/0
+# rpcallowip=::/0
 testnet=1
 txindex=0
 listen=1
