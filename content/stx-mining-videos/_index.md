@@ -5,8 +5,8 @@ description: "Visual learning at its finest."
 layout: "section"
 ---
 
-{{< notification params="is-success is-light"
- content="<strong>Please note that Part 1 of the competition has ended</strong>, and Parts 2/3 will be coming soon! More information can be found on the <a href=\"/\">home page</a>." >}}
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that this page has not been updated for Part 2 of the competition, and new content will be coming soon!" >}}
 
 ### Table of Contents
 
