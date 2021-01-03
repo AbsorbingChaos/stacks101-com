@@ -1,6 +1,6 @@
 ---
 title: "Stacks-Dump Example"
-date: 2020-12-12T15:36:10Z
+date: 2020-12-31T15:36:10Z
 description: "Big GIF style"
 layout: "section"
 ---

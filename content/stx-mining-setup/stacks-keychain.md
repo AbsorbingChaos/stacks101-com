@@ -1,15 +1,29 @@
 ---
-title: "Setting up a STX Miner"
-date: 2020-12-12T15:36:10Z
-description: "Keep it simple, stacker."
+title: "Setting up a Stacks Keychain"
+date: 2021-01-02T15:36:10Z
+description: "Not your keys, not your crypto"
 layout: "section"
 ---
 
-## Mine to 1 Million Stacks - Part 2
+### Table of Contents
 
-Part 2 of the competition will run on the Stacks Xenon testnet network, and from here forward miners need to run a local Bitcoin node as well as use the [latest release of stacks-node.](https://github.com/blockstack/stacks-blockchain/releases/latest)
+- [Creating a Keychain](#creating-a-keychain)
+  - [stacks-cli](#stacks-cli)
+  - [stacks-gen](#stacks-gen)
+- [Generate WIF key](#generate-wif-key)
+- [Other Resources](#other-resources)
 
-Instructions are divided into three sections:
+## Creating a Keychain
+
+### stacks-cli
+
+### stacks-gen
+
+## Generate WIF key
+
+stacks-gen import
+
+## Other Resources
 
 {{< columns param="start-columns" >}}
   {{< resource-card title="Bitcoin Node"
