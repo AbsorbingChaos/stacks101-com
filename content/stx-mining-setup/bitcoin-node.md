@@ -53,6 +53,7 @@ server=1
 daemon=1
 rpcuser=replace-with-your-bitcoind-username
 rpcpassword=replace-with-your-bitcoind-password
+rpcallowip=127.0.0.1
 testnet=1
 txindex=0
 listen=1
