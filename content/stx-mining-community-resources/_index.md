@@ -5,9 +5,6 @@ description: "Moving STX forward, together!"
 layout: "section"
 ---
 
-{{< notification params="is-success is-light"
- content="<strong>Please note that Part 1 of the competition has ended</strong>, and Parts 2/3 will be coming soon! More information can be found on the <a href=\"/\">home page</a>." >}}
-
 ```none
     |||||||               |||||||
      |||||||             |||||||
