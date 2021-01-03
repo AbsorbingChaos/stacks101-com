@@ -12,7 +12,7 @@ $size-7: 1rem;
 $link: $primary;
 $link-visited: $primary;
 $footer-background-color: black;
-$footer-color: white;
+$footer-color: #CCC;
 
 // custom CSS
 .header-link,
@@ -28,6 +28,12 @@ $footer-color: white;
 }
 .content h2 {
   border-bottom: 1px solid black;
+}
+.footer-link {
+  color: #9b93ff;
+}
+.footer-link:hover {
+  color: white;
 }
 
 // Import bulma files
