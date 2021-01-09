@@ -17,6 +17,9 @@ layout: "section"
 - [Obtaining tBTC](#obtaining-tbtc)
 - [Other Resources](#other-resources)
 
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
+
 ## Creating a Keychain
 
 ### Prerequisites
@@ -92,6 +95,9 @@ Since `stacks-node` is connecting to the bitcoin testnet, you can use any online
  content="Note that tBTC does not have any real-world value, and avoid any scams asking you to pay for it." >}}
 
 ## Other Resources
+
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 {{< columns param="start-columns" >}}
   {{< resource-card title="Bitcoin Node"
