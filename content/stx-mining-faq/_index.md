@@ -6,7 +6,7 @@ layout: "section"
 ---
 
 {{< notification params="is-danger is-light py-6 has-text-weight-bold"
- content="Please note that the information on this page was intended for Part 1 of the Daemon Technologies competition. To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
+ content="Please note that the information on this page was intended for Part 1 of the Daemon Technologies competition.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 ### Table of Contents
 
