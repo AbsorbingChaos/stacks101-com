@@ -56,6 +56,8 @@ npx -q stacks-gen sk --testnet > keychain.json
 
 In order to [use your BTC address with `bitcoind`,](/stx-mining-setup/bitcoin-node/#interacting-with-bitcoind) you will need to first tell your node about your BTC address using either `importaddress` or `importprivkey` with `bitcoin-cli`. A quick description of both options is below, with more information on the [Bitcoin Node page.](#other-resources)
 
+*Please note that `-rpcclienttimeout=7200` should be added to the bitcoin-cli command for importing either an address or key, as it can take quite a while for the operation to complete.*
+
 ### Import Address
 
 > Adds an address or script (in hex) that can be watched as if it were in your wallet but cannot be used to spend. Requires a new wallet backup.

@@ -35,7 +35,7 @@ An example of the folder name: `/tmp/stacks-testnet-5c87e24790411516`
 
 ### Finding the stacks-node Directory
 
-By default, every time `stacks-node` is restarted it creates a new directory in the `/tmp` folder to save data. This can lead to several versions of the `stacks-testnet-randomstring` folder, and there are two methods to find the correct one to use.
+By default, every time `stacks-node` is restarted it creates a new directory in the `/tmp` (`C:\tmp` on Windows / `/mnt/c/tmp` on WSL) folder to save data. This can lead to several versions of the `stacks-testnet-randomstring` folder, and there are two methods to find the correct one to use.
 
 #### Miner Still Running
 

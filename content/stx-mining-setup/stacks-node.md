@@ -103,6 +103,10 @@ bootstrap_node = "047435c194e9b01b3d7f7a2802d6684a3af68d05bbf4ec8f17021980d77769
 # Enter your private key here from your Stacks Keychain
 seed = "replace-with-your-private-key"
 miner = true
+# uncomment the line below to change the directory
+# where the stacks blockchain data is stored.
+# NOTE: if this gets corrupted, your node will not start
+# working_dir = "/home/username/stacks-blockchain-data"
 
 [burnchain]
 chain = "bitcoin"
