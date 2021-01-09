@@ -6,7 +6,7 @@ layout: "section"
 ---
 
 {{< notification params="is-danger is-light py-6 has-text-weight-bold"
- content="Please note that this page has not been updated for Part 2 of the competition, and new content will be coming soon!" >}}
+ content="Please note that the information in these videos was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 ### Table of Contents
 

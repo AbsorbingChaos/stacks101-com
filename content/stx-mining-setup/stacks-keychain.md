@@ -17,6 +17,9 @@ layout: "section"
 - [Obtaining tBTC](#obtaining-tbtc)
 - [Other Resources](#other-resources)
 
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
+
 ## Creating a Keychain
 
 ### Prerequisites
@@ -56,6 +59,8 @@ npx -q stacks-gen sk --testnet > keychain.json
 
 In order to [use your BTC address with `bitcoind`,](/stx-mining-setup/bitcoin-node/#interacting-with-bitcoind) you will need to first tell your node about your BTC address using either `importaddress` or `importprivkey` with `bitcoin-cli`. A quick description of both options is below, with more information on the [Bitcoin Node page.](#other-resources)
 
+*Please note that `-rpcclienttimeout=7200` should be added to the bitcoin-cli command for importing either an address or key, as it can take quite a while for the operation to complete.*
+
 ### Import Address
 
 > Adds an address or script (in hex) that can be watched as if it were in your wallet but cannot be used to spend. Requires a new wallet backup.
@@ -90,6 +95,9 @@ Since `stacks-node` is connecting to the bitcoin testnet, you can use any online
  content="Note that tBTC does not have any real-world value, and avoid any scams asking you to pay for it." >}}
 
 ## Other Resources
+
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 {{< columns param="start-columns" >}}
   {{< resource-card title="Bitcoin Node"

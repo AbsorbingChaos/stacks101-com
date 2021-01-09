@@ -17,6 +17,9 @@ layout: "section"
   - [General Strategy for Mining](#general-strategy-for-mining)
 - [Other Resources](#other-resources)
 
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
+
 ## Set up a Stacks Node
 
 The official Stacks Documentation contains instructions for [running a testnet node](https://docs.blockstack.org/understand-stacks/running-testnet-node) and [setting up a miner](https://docs.blockstack.org/en-US/start-mining).
@@ -103,6 +106,10 @@ bootstrap_node = "047435c194e9b01b3d7f7a2802d6684a3af68d05bbf4ec8f17021980d77769
 # Enter your private key here from your Stacks Keychain
 seed = "replace-with-your-private-key"
 miner = true
+# uncomment the line below to change the directory
+# where the stacks blockchain data is stored.
+# NOTE: if this gets corrupted, your node will not start
+# working_dir = "/home/username/stacks-blockchain-data"
 
 [burnchain]
 chain = "bitcoin"
@@ -175,6 +182,9 @@ When setting up `stacks-node`, it is possible to set the amount of BTC spent bas
 | [burn_fee_cap](https://docs.blockstack.org/references/stacks-node-configuration#burn_fee_cap-optional) | Max burn fee for a transaction. |
 
 ## Other Resources
+
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 {{< columns param="start-columns" >}}
   {{< resource-card title="Bitcoin Node"

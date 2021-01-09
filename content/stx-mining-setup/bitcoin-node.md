@@ -10,9 +10,13 @@ layout: "section"
 - [Set up a Local Bitcoin Node](#set-up-a-local-bitcoin-node)
   - [Bitcoind System Requirements](#bitcoind-system-requirements)
   - [Bitcoind Configuration File](#bitcoind-configuration-file)
+  - [Verify Bitcoind is Running](#verify-bitcoind-is-running)
   - [Interacting with Bitcoind](#interacting-with-bitcoind)
   - [Bash Alias Function](#bash-alias-function)
 - [Other Resources](#other-resources)
+
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 ## Set up a Local Bitcoin Node
 
@@ -30,7 +34,7 @@ Once you download the software, it is good practice to verify the release signat
 A local bitcoin node runs as a command-line application (CLI) by default, and there are additional instructions on how to add a graphical user interface (GUI) depending on your operating system.
 
 {{< notification params="is-info is-light"
- content="This tutorial assumes you are using the CLI version, and anyone using the GUI (<a href=\"https://bitcoin.org/en/full-node#other-linux-gui\" rel=\"noopener\" target=\"_blank\">bitcoin-qt on Linux</a> or <a href=\"https://bitcoin.org/en/full-node#win10-gui\" rel=\"noopener\" target=\"_blank\">Bitcoin Core on Windows</a>) will need to adapt the instructions for their own setup." >}}
+ content="This tutorial assumes you are using the CLI version, and anyone using the GUI (<a href=\"https://bitcoin.org/en/full-node#other-linux-gui\" rel=\"noopener\" target=\"_blank\">bitcoin-qt on Linux</a> or <a href=\"https://bitcoin.org/en/full-node#win10-gui\" rel=\"noopener\" target=\"_blank\">Bitcoin Core on Windows</a>) will need to adapt the instructions for their own setup. The bitcoin.conf file used by the GUI should be accessible via the settings / preferences panel." >}}
 
 The bitcoin testnet currently requires **30-40gb of storage**, and the bitcoin mainnet requires upwards of **350gb of storage**.
 
@@ -50,7 +54,8 @@ You can simply run `bitcoind -conf=path/to/bitcoin.conf` and let it use the valu
 
 ```none
 server=1
-daemon=1
+# use the below setting to run in the background
+# daemon=1
 rpcuser=replace-with-your-bitcoind-username
 rpcpassword=replace-with-your-bitcoind-password
 rpcallowip=127.0.0.1
@@ -70,6 +75,28 @@ bind=0.0.0.0:18333
 rpcbind=0.0.0.0:18332
 rpcport=18332
 ```
+
+### Verify Bitcoind is Running
+
+{{< notification params="is-warning is-light"
+ content="On Windows, you can verify the process is running by opening the task manager (<kbd>CTRL + Shift + Esc</kbd>) and searching for the process name `bitcoind` under details. The commands in this section were written for Mac, Linux, or Windows WSL users." >}}
+
+Search for the bitcoind process using `ps`:
+
+```bash
+ps -ax | grep bitcoin | grep -v grep
+```
+
+Which will output something similar to:
+
+```bash
+1969 ?        Ssl   80:26 bitcoind
+```
+
+Here we can see bitcoind is running. If it did *not* appear, then you need to start your bitcoin node again.
+
+{{< notification params="is-info is-light"
+ content="Pro tip: you can run <code>lsof -i -P -n | grep LISTEN</code> to check the ports in use by bitcoind, which will output something similar to:<br /><br /><code>bitcoind 1969 whoabuddy   10u  IPv4  26807      0t0  TCP 127.0.0.1:18332 (LISTEN)</code>" >}}
 
 ### Interacting with Bitcoind
 
@@ -143,6 +170,9 @@ bitcoin-cli-stx getblockchaininfo
 ```
 
 ## Other Resources
+
+{{< notification params="is-danger is-light py-6 has-text-weight-bold"
+ content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 {{< columns param="start-columns" >}}
   {{< resource-card title="Bitcoin Node"
