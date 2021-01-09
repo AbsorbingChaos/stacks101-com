@@ -15,13 +15,19 @@ layout: "section"
 - [Using stacks-dump](#using-stacks-dump)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Usage](#usage)
+  - [Usage - Xenon](#usage---xenon)
+  - [Usage - Krypton](#usage---krypton)
+- [Sample Data](#sample-data)
+  - [Copy to Spreadsheet](#copy-to-spreadsheet)
 
 ## About stacks-dump
 
 [stacks-dump is a tool from Pascal (@psq)](https://github.com/psq/stacks-dump) that analyzes the information from a miner in `stacks-node` storage and provides information such as Actual Wins, Total Wins, Total Mined, and more.
 
 This script should be run against the `stacks-node` working directory, which is saved to `/tmp` by default unless the `working_dir` value is set in the stacks-node toml config file.
+
+{{< notification params="is-info is-light"
+ content="On Windows, the default temp directory used by stacks-node is <code>C:\tmp</code>, which is accessible from <code>/mnt/c/tmp</code> on WSL." >}}
 
 An example of the folder name: `/tmp/stacks-testnet-5c87e24790411516`
 
@@ -121,7 +127,19 @@ cd stacks-dump
 yarn
 ```
 
-### Usage
+### Usage - Xenon
+
+The steps below will use the latest version of stacks-dump, using the start and end blocks from the competition, and outputting the information in CSV format so it can easily be transferred to a spreadsheet.
+
+For more information on stacks-dump usage, please [see the readme on GitHub](https://github.com/psq/stacks-dump).
+
+```bash
+node report -x -s 1902238 -e 1902900 -c /tmp/stacks-testnet-ea025d61c75f983a/
+```
+
+Which will review the information in stacks-node storage, output some data about leader key registrations, pox data, and end with a chart of stats that can be copy/pasted into a spreadsheet.
+
+### Usage - Krypton
 
 The steps below will use the correct version of stacks-dump based on the Daemon Technologies competition, using the start and end blocks from the competition, and outputting the information in CSV format so it can easily be transferred to a spreadsheet.
 
@@ -132,6 +150,8 @@ node report-24.0.x.x -s 983 -e 7055 -c /tmp/stacks-testnet-cbd987d44ca5058e
 ```
 
 Which will review the information in stacks-node storage, output some data about leader key registrations, pox data, and end with a chart of stats that can be copy/pasted into a spreadsheet.
+
+## Sample Data
 
 Here is an example of the data from my node following the competition:
 
@@ -151,4 +171,6 @@ STZQC4PW1GW6JKDSVEQN3VY6J54WMHZHCZS96428,mmJWK3NkPqRUhGh5HFeZ1nQCqiqa2FrZSY,4,12
 STZYY6PRBCNWYXPY1GVN1T00B6E61BAKK2NN68N7,mmM1JSGjMqykTWxCcoaZJQ2vE22C5QfUSN,1,17,452,0.08%,3.76%,9040000,0.23%,20000
 ```
 
-To view an animation of copying and pasting this information, [click here to open](/stx-mining-stacksdump/example/) a (fairly large) gif file.
+### Copy to Spreadsheet
+
+To view an animation of copying and pasting this information from the terminal, [click here to view](/stx-mining-stacksdump/example/) a (fairly large) gif file.
