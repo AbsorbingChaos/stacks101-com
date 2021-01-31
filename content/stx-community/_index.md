@@ -1,5 +1,5 @@
 ---
-title: "Community Resources"
+title: "Stacks Community"
 date: 2020-12-12T15:36:10Z
 description: "Moving STX forward, together!"
 layout: "section"
@@ -27,7 +27,13 @@ layout: "section"
     |||||||               |||||||
 ```
 
-*Image remixed based on original from @dantrevino and StacksPack*
+*Image remixed based on original from* [@dantrevino and StacksPack](https://gitlab.com/riot.ai/stackspack)
+
+TODO: add community quote
+
+TODO: expand page content
+
+TODO: add Freehold
 
 ## Community Resources
 

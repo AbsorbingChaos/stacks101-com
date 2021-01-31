@@ -1,5 +1,5 @@
 ---
-title: "Common STX Miner Questions"
+title: "Stacks Miner FAQ"
 date: 2020-12-12T15:36:10Z
 description: "Keep it simple, stacker."
 layout: "section"
