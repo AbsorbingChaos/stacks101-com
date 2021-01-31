@@ -59,6 +59,12 @@ canonifyURLs = false
     weight = 40
     [[menu.main]]
       parent = "stx-mining"
+      name = "Competition"
+      identifier = "stx-mining-competition"
+      url = "/stx-mining/competition"
+      weight = 10
+    [[menu.main]]
+      parent = "stx-mining"
       name = "FAQ"
       identifier = "stx-mining-faq"
       url = "/stx-mining/faq"
