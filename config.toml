@@ -19,7 +19,7 @@ canonifyURLs = false
   company = "Stacks 101"
   title = "Stacks 101"
   tagline = "Tutorials, lessons, and info about Stacks (STX)"
-  description = "Stacks mining tips and tricks that helped me along the way, and hopefully they help you, too!"
+  description = "Community curated Stacks (STX) knowledge, resources, and educational content."
   copyright = "© 2020 Absorbing Chaos"
 
 [params.author]
@@ -43,45 +43,63 @@ canonifyURLs = false
     url = "/"
     weight = 10
   [[menu.main]]
-    name = "Mining FAQ"
-    identifier = "stx-mining-faq"
-    url = "/stx-mining-faq/"
+    name = "Community"
+    identifier = "stx-community"
+    url = "/stx-community/"
     weight = 20
   [[menu.main]]
-    name = "Mining Setup"
-    identifier = "stx-mining-setup"
-    url = "/stx-mining-setup/"
+    name = "Governance"
+    identifier = "stx-governance"
+    url = "/stx-governance/"
     weight = 30
+  [[menu.main]]
+    name = "Mining"
+    identifier = "stx-mining"
+    url = "/stx-mining/"
+    weight = 40
     [[menu.main]]
-      parent = "stx-mining-setup"
-      name = "Bitcoin Node"
-      identifier = "stx-mining-setup-bitcoin"
-      url = "/stx-mining-setup/bitcoin-node"
+      parent = "stx-mining"
+      name = "FAQ"
+      identifier = "stx-mining-faq"
+      url = "/stx-mining/faq"
       weight = 10
     [[menu.main]]
-      parent = "stx-mining-setup"
-      name = "Stacks Node"
-      identifier = "stx-mining-setup-stacks"
-      url = "/stx-mining-setup/stacks-node"
+      parent = "stx-mining"
+      name = "Resources"
+      identifier = "stx-mining-resources"
+      url = "/stx-mining/resources"
       weight = 20
     [[menu.main]]
-      parent = "stx-mining-setup"
-      name = "Stacks Keychain"
-      identifier = "stx-mining-setup-keychain"
-      url = "/stx-mining-setup/stacks-keychain"
+      parent = "stx-mining"
+      name = "Setup"
+      identifier = "stx-mining-setup"
+      url = "/stx-mining/setup"
       weight = 30
+    [[menu.main]]
+      parent = "stx-mining"
+      name = "Stacks-Dump"
+      identifier = "stx-mining-stacks-dump"
+      url = "/stx-mining/stacks-dump"
+      weight = 40
   [[menu.main]]
-    name = "Mining Videos"
-    identifier = "stx-mining-videos"
-    url = "/stx-mining-videos/"
-    weight = 40
-  [[menu.main]]
-    name = "Community Resources"
-    identifier = "stx-mining-community-resources"
-    url = "/stx-mining-community-resources/"
+    name = "Stacking"
+    identifier = "stx-stacking"
+    url = "/stx-stacking/"
     weight = 50
+    [[menu.main]]
+      parent = "stx-stacking"
+      name = "FAQ"
+      identifier = "stx-stacking-faq"
+      url = "/stx-stacking/faq"
+      weight = 10
+    [[menu.main]]
+      parent = "stx-stacking"
+      name = "Resources"
+      identifier = "stx-stacking-resources"
+      url = "/stx-stacking/resources"
+      weight = 20
   [[menu.main]]
-    name = "Stacks Dump"
-    identifier = "stx-mining-stacksdump"
-    url = "/stx-mining-stacksdump/"
+    name = "Videos"
+    identifier = "stx-videos"
+    url = "/stx-videos/"
     weight = 60
