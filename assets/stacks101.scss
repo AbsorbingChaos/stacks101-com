@@ -15,6 +15,10 @@ $footer-background-color: black;
 $footer-color: #CCC;
 
 // custom CSS
+hr {
+  background-color: black !important;
+  height: 1px !important;
+}
 .header-link,
 .header-link:visited {
   color: black;
@@ -34,6 +38,9 @@ $footer-color: #CCC;
 }
 .footer-link:hover {
   color: white;
+}
+.footer-tips {
+  overflow-wrap: break-word;
 }
 
 // Import bulma files

@@ -15,8 +15,7 @@ layout: "section"
 - [Using stacks-dump](#using-stacks-dump)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Usage - Xenon](#usage---xenon)
-  - [Usage - Krypton](#usage---krypton)
+  - [Usage](#usage)
 - [Sample Data](#sample-data)
   - [Copy to Spreadsheet](#copy-to-spreadsheet)
 
@@ -27,7 +26,7 @@ layout: "section"
 This script should be run against the `stacks-node` working directory, which is saved to `/tmp` by default unless the `working_dir` value is set in the stacks-node toml config file.
 
 {{< notification params="is-info is-light"
- content="On Windows, the default temp directory used by stacks-node is <code>C:\tmp</code>, which is accessible from <code>/mnt/c/tmp</code> on WSL." >}}
+ content="<span class=\"has-text-weight-bold\">Note:</span> on Windows, the default temp directory used by stacks-node is <code>C:\tmp</code>, which is accessible from <code>/mnt/c/tmp</code> on WSL." >}}
 
 An example of the folder name: `/tmp/stacks-testnet-5c87e24790411516`
 
@@ -38,6 +37,9 @@ An example of the folder name: `/tmp/stacks-testnet-5c87e24790411516`
 By default, every time `stacks-node` is restarted it creates a new directory in the `/tmp` (`C:\tmp` on Windows / `/mnt/c/tmp` on WSL) folder to save data. This can lead to several versions of the `stacks-testnet-randomstring` folder, and there are two methods to find the correct one to use.
 
 #### Miner Still Running
+
+{{< notification params="is-info is-light"
+ content="<span class=\"has-text-weight-bold\">Note:</span> The commands in this section were written for Mac, Linux, or Windows WSL users." >}}
 
 **If `stacks-node` is still running**, then you can use the following commands to find out what directory is in use.
 
@@ -69,6 +71,9 @@ stacks-no 3322 whoabuddy   44u      REG    8,2     16384 3801116 /tmp/stacks-tes
 In this case, `/tmp/stacks-testnet-cbd987d44ca5058e/` is the folder where my data is stored, and the example I will use throughout the instructions.
 
 #### Miner Stopped
+
+{{< notification params="is-info is-light"
+ content="<span class=\"has-text-weight-bold\">Note:</span> The commands in this section were written for Mac, Linux, or Windows WSL users." >}}
 
 **If `stacks-node` is no longer running**, then you have to figure out which folder in `/tmp` to use. If there is only one, then that is the one, but if there are multiple, then you will need to look for either the *most recently modified* or the *largest* folder of the set.
 
@@ -114,8 +119,7 @@ Once we know our target folder from the steps above, then we can start setting u
 
 - Node 14.x
 - Yarn
-
-(both of which *should be installed* as part of Mining-Bot procedures)
+- Git
 
 ### Installation
 
@@ -127,29 +131,19 @@ cd stacks-dump
 yarn
 ```
 
-### Usage - Xenon
+### Usage
+
+From the stacks-dump folder above, run the following command to analyze the miner's data.
 
 The steps below will use the latest version of stacks-dump, using the start and end blocks from the competition, and outputting the information in CSV format so it can easily be transferred to a spreadsheet.
 
-For more information on stacks-dump usage, please [see the readme on GitHub](https://github.com/psq/stacks-dump).
+For more information and all options for stacks-dump usage, please [see the readme on GitHub](https://github.com/psq/stacks-dump).
 
 ```bash
-node report -x -s 1902238 -e 1902900 -c /tmp/stacks-testnet-ea025d61c75f983a/
+node report -c /tmp/stacks-testnet-ea025d61c75f983a/
 ```
 
-Which will review the information in stacks-node storage, output some data about leader key registrations, pox data, and end with a chart of stats that can be copy/pasted into a spreadsheet.
-
-### Usage - Krypton
-
-The steps below will use the correct version of stacks-dump based on the Daemon Technologies competition, using the start and end blocks from the competition, and outputting the information in CSV format so it can easily be transferred to a spreadsheet.
-
-For more information on stacks-dump usage, please [see the readme on GitHub](https://github.com/psq/stacks-dump).
-
-```bash
-node report-24.0.x.x -s 983 -e 7055 -c /tmp/stacks-testnet-cbd987d44ca5058e
-```
-
-Which will review the information in stacks-node storage, output some data about leader key registrations, pox data, and end with a chart of stats that can be copy/pasted into a spreadsheet.
+Which will review the information in stacks-node storage, and output a chart of stats that can be copy/pasted into a spreadsheet.
 
 ## Sample Data
 
@@ -173,4 +167,4 @@ STZYY6PRBCNWYXPY1GVN1T00B6E61BAKK2NN68N7,mmM1JSGjMqykTWxCcoaZJQ2vE22C5QfUSN,1,17
 
 ### Copy to Spreadsheet
 
-To view an animation of copying and pasting this information from the terminal, [click here to view](/stx-mining-stacksdump/example/) a (fairly large) gif file.
+To view an animation of copying and pasting this information from the terminal, [click here to view](/stx-mining/stacks-dump/example/) a (fairly large) gif file.
