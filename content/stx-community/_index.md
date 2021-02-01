@@ -43,13 +43,21 @@ layout: "section"
 - [Stacks Grants](https://grants.stacks.org) - Funding program for tools, services, education, evangelism, education, collaboration, core protocol development, and more.
 - [Freehold](https://joinfreehold.com) - A community of cryptocurrency stakeholders focused on furthering the reputation, usefulness, and mission of their respective holdings.
 
+### Clarity
+
+- [Clarity.tools](http://clarity.tools/) - An interactive programming environment with live results and advanced features.
+- [Clarity Web IDE](https://github.com/friedger/clarity-js-sdk/blob/feature/web-ide/packages/clarity-tutorials/README-web-ide.md) - A gitpod-based IDE to develop and test Clarity programs directly from the browser.
+- [Clarity Demo Series](https://github.com/friedger/clarity-demo) - An educational demo series featuring Stacks community members.
+- [Clarity Language Server](https://marketplace.visualstudio.com/items?itemName=lgalabru.clarity-lsp) - Clarity LSP for VSCode
+
 ### Mining
 
 - [Miner Setup Script](https://github.com/AbsorbingChaos/stx-miner-script) - A setup script that will help you run a miner node using Ubuntu Server.
 - [Mining Calculator](https://friedger.github.io/mining-calculator/) - Mining calculator to help calculate miner profitability and strategy.
 - [StacksPack](https://gitlab.com/riot.ai/stackspack) - A Stacks blockchain miner or follower node for Raspberry Pi and similar.
-- [Stacks-Gen](https://github.com/psq/stacks-gen) - Generate all the keys needed for use with Stacks 2.0 mining and stacking.
 - [Stacks-Dump](https://github.com/psq/stacks-dump) - Tool to dump info from stacks-node storage for analyzing the blockchain.
+- [Stacks-Gen](https://github.com/psq/stacks-gen) - Generate all the keys needed for use with Stacks 2.0 mining and stacking.
+- [Stacks Status](https://stacks-status.com/) - A community run status checker for the Stacks ecosystem.
 
 ### Stacking
 
