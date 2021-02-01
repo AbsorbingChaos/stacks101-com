@@ -17,37 +17,37 @@ layout: "section"
 ## Keychain
 
 {{< lite-yt id="82b8PGoQYpI" title="Freehold: STX Mining - Creating a Keychain on Windows"
- description="A quick 5-minute walkthrough on how to create a keychain on Windows, which includes your private key, BTC address, and STX address." >}}
+description="A quick 5-minute walkthrough on how to create a keychain on Windows, which includes your private key, BTC address, and STX address." >}}
 
 {{< lite-yt id="-JSyESB3-Es" title="Explaining how to register and how to create keychain from Andrzej"
- description="This is pretty long one, but it gives broader perspective and instructions for Windows and MacOS." >}}
+description="This is pretty long one, but it gives broader perspective and instructions for Windows and MacOS." >}}
 
 ## Mining Bot
 
 {{< lite-yt id="YEYfR3nEKPI" title="STX Mining - Install Mining Bot on Windows"
- description="A full walkthrough of installing WSL on Windows 10 with Ubuntu, followed by installing and configuring Mining-Bot." >}}
+description="A full walkthrough of installing WSL on Windows 10 with Ubuntu, followed by installing and configuring Mining-Bot." >}}
 
 {{< lite-yt id="TCtCTttsSeI" title="Setup Mining-Bot Alpha 1.0.0 Release on Mac OSX"
- description="A demonstration of the installation and setup of Mining-Bot on OSX to run a Stacks Node." >}}
+description="A demonstration of the installation and setup of Mining-Bot on OSX to run a Stacks Node." >}}
 
 {{< lite-yt id="FXifFx0Akzc" title="Setup Mining-Bot Alpha 1.0.0 Release on Windows"
- description="A demonstration of the installation and setup of Mining-Bot on Windows to run a Stacks Node." >}}
+description="A demonstration of the installation and setup of Mining-Bot on Windows to run a Stacks Node." >}}
 
 ## Pair Mining (Freehold)
 
 *Note: Some procedures have been updated since we originally created these videos, and it is recommended to use the Mining-Bot for the Daemon Technologies competition.*
 
 {{< lite-yt id="WEbXpteeaCA" title="Pair Mining: Jason and Mark on Mac OSX"
- description="A full walkthrough of setting up stacks-node to mine on Mac OSX, followed by setting up the Mining-Bot from Daemon Technologies." >}}
+description="A full walkthrough of setting up stacks-node to mine on Mac OSX, followed by setting up the Mining-Bot from Daemon Technologies." >}}
 
 {{< lite-yt id="N787Ok3l4qs" title="Pair Mining: Jason and Patrick on Mac OSX"
- description="A full walkthrough of setting up stacks-node to mine on Mac OSX. We ran into some issues, but we powered through them and solved everything by the end!" >}}
+description="A full walkthrough of setting up stacks-node to mine on Mac OSX. We ran into some issues, but we powered through them and solved everything by the end!" >}}
 
 {{< lite-yt id="doMkIGUD-cw" title="Pair Mining: Jason and Radek on Windows"
- description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies. We ran into an error with Mining-Bot, but it would be resolved with the installation of Windows Subsystem for Linux (WSL)." >}}
+description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies. We ran into an error with Mining-Bot, but it would be resolved with the installation of Windows Subsystem for Linux (WSL)." >}}
 
 {{< lite-yt id="hviSdN95vrw" title="Pair Mining: Jason and Ethan on Windows"
- description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies." >}}
+description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies." >}}
 
 {{< lite-yt id="rtequEoZtM8" title="Pair Mining: Jason and Randy on Windows"
- description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies." >}}
+description="A full walkthrough of setting up stacks-node to mine on Windows, followed by setting up the Mining-Bot from Daemon Technologies." >}}

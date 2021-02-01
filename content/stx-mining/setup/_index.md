@@ -58,4 +58,3 @@ The stacks-node software downloads the Stacks blockchain, verifies transactions,
 
 {{< notification params="is-info is-light"
  content="<span class=\"has-text-weight-bold\">Note:</span> a node can operate in two modes, as a <span class=\"has-text-weight-bold\">follower</span> or as a <span class=\"has-text-weight-bold\">miner</span>.<ul><li>A follower node will download the Stacks blockchain, verify transactions, contribute to the decentralization of the network, and provide an API to interact with the blockchain data.</li><li>A miner node does everything a follower node does, as well as submitting leader elections to create the next block in the Stacks chain.</li></ul>" >}}
- 
