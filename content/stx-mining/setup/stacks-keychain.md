@@ -1,7 +1,7 @@
 ---
 title: "Setting up a Stacks Keychain"
 date: 2021-01-02T15:36:10Z
-description: "Not your keys, not your crypto"
+description: "Not your keys, not your crypto."
 layout: "section"
 ---
 
@@ -9,23 +9,19 @@ layout: "section"
 
 - [Creating a Keychain](#creating-a-keychain)
   - [Prerequisites](#prerequisites)
-  - [stacks-cli](#stacks-cli)
-  - [stacks-gen](#stacks-gen)
+  - [Using @stacks-cli](#using-stacks-cli)
+  - [Using stacks-gen](#using-stacks-gen)
 - [Importing address into Bitcoind](#importing-address-into-bitcoind)
   - [Import Address](#import-address)
   - [Import Private Key](#import-private-key)
-- [Obtaining tBTC](#obtaining-tbtc)
 - [Other Resources](#other-resources)
-
-{{< notification params="is-danger is-light py-6 has-text-weight-bold"
- content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 ## Creating a Keychain
 
 ### Prerequisites
 
-{{< notification params="is-warning is-light"
- content="To generate a keychain, the command <code>npx</code> is used and requires that <a href=\"https://nodejs.dev\" rel=\"noopener\" target=\"_blank\">Node.js</a> is installed." >}}
+{{< notification params="is-info is-light"
+ content="<span class=\"has-text-weight-bold\">Note:</span> To generate a keychain, the command <code>npx</code> is used and requires that Node.js is installed." >}}
 
 To check which version of each software you have installed, use the commands below:
 
@@ -35,31 +31,35 @@ npm -v
 npx -v
 ```
 
-If you need to install another version of node, the [Node Version Manager](https://github.com/nvm-sh/nvm) is recommended for Linux, MacOS, and Windows WSL. If you are using Windows, directly download the software from the [Node.js website](https://nodejs.devNode.js).
+If you need to install another version of node, the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) is recommended for Linux, MacOS, and Windows WSL. If you are using Windows, directly download the software from the [Node.js website.](https://nodejs.dev)
 
-### stacks-cli
+### Using @stacks-cli
 
 To generate a keychain using the command from the [Stacks documentation:](https://docs.blockstack.org/start-mining#running-a-miner)
 
 ```bash
-npx @stacks/cli make_keychain -t > keychain.json
+npx @stacks/cli make_keychain > keychain.json
 ```
 
-### stacks-gen
+### Using stacks-gen
 
 To generate a keychain using [stacks-gen from Pascal:](https://github.com/psq/stacks-gen)
 
 ```bash
-npx -q stacks-gen sk --testnet > keychain.json
+npx -q stacks-gen sk > keychain.json
 ```
 
-*Note: the commands above will save the keychain information to a file named `keychain.json`. You can view this file in any text editor or via the command line using `cat keychain.json`.*
+{{< notification params="is-info is-light"
+ content="<span class=\"has-text-weight-bold\">Note:</span> Both commands above will save the keychain information to a file named <code>keychain.json</code>. You can view this file in any text editor or via the command line using <code>cat keychain.json</code> on Mac/Linux/WSL or <code>type keychain.json</code> on Windows." >}}
 
 ## Importing address into Bitcoind
 
-In order to [use your BTC address with `bitcoind`,](/stx-mining-setup/bitcoin-node/#interacting-with-bitcoind) you will need to first tell your node about your BTC address using either `importaddress` or `importprivkey` with `bitcoin-cli`. A quick description of both options is below, with more information on the [Bitcoin Node page.](#other-resources)
+In order to use your BTC address with `bitcoind`, you will need to first tell your node about your BTC address using either `importaddress` or `importprivkey` with `bitcoin-cli`.
 
-*Please note that `-rpcclienttimeout=7200` should be added to the bitcoin-cli command for importing either an address or key, as it can take quite a while for the operation to complete.*
+A quick description of both options is below, with more information on the [Bitcoin Node page.](/stx-mining/setup/bitcoin-node/#using-bitcoin-cli)
+
+{{< notification params="is-info is-light"
+ content="<span class=\"has-text-weight-bold\">Note:</span> When running <code>importaddress</code> or <code>importprivkey</code>, it is important to add <code>-rpcclienttimeout=7200</code> when running bitcoin-cli to ensure the operation has enough time to complete." >}}
 
 ### Import Address
 
@@ -80,33 +80,24 @@ In order to use `importprivkey` we need a Wallet Import Format (WIF) formatted f
 If you did not use `stacks-gen` to create your initial key, you can import your existing key using the backup phrase.
 
 ```bash
-stacks-gen sk --testnet --phrase "replace with twenty four word backup phrase" > keychain_stacksgen.json
+npx -q stacks-gen sk --phrase "replace with twenty four word backup phrase" > keychain_stacksgen.json
 ```
 
-*Note: the command above will save the keychain information to a file named `keychain_stacksgen.json`. You can view this file in any text editor or via the command line using `cat keychain_stacksgen.json`.*
+{{< notification params="is-info is-light"
+ content="<span class=\"has-text-weight-bold\">Note:</span> Both commands above will save the keychain information to a file named <code>keychain_stacksgen.json</code>. You can view this file in any text editor or via the command line using <code>cat keychain_stacksgen.json</code> on Mac/Linux/WSL or <code>type keychain_stacksgen.json</code> on Windows." >}}
 
 The file generated by `stacks-gen` will contain a value for `wif` that can be used with `bitcoin-cli importprivkey`.
 
-## Obtaining tBTC
-
-Since `stacks-node` is connecting to the bitcoin testnet, you can use any online faucet to obtain tBTC, as well as view your balance and transactions in any online explorer that supports bitcoin testnet.
-
-{{< notification params="is-danger is-light"
- content="Note that tBTC does not have any real-world value, and avoid any scams asking you to pay for it." >}}
-
 ## Other Resources
-
-{{< notification params="is-danger is-light py-6 has-text-weight-bold"
- content="Please note that the information in these tutorials was intended for Part 1 and 2 of the Daemon Technologies competition on the Stacks Testnet.<br /><br />To find the most up to date information, please visit the <a href=\"https://docs.blockstack.org/\" target=\"_blank\" rel=\"noopener\">official Stacks Documentation website.</a>" >}}
 
 {{< columns param="start-columns" >}}
   {{< resource-card title="Bitcoin Node"
     desc="A walkthrough for setting up and interacting with bitcoind for use with stacks-node."
-    link="/stx-mining-setup/bitcoin-node" >}}
-  {{< resource-card title="Stacks Node"
-    desc="A walkthrough for setting up stacks-node and configuring it for mining."
-    link="/stx-mining-setup/stacks-node" >}}
+    link="/stx-mining/setup/bitcoin-node" >}}
   {{< resource-card title="Stacks Keychain"
     desc="A walkthrough of setting up a stacks keychain using various tools."
-    link="/stx-mining-setup/stacks-keychain" >}}
+    link="/stx-mining/setup/stacks-keychain" >}}
+  {{< resource-card title="Stacks Node"
+    desc="A walkthrough for setting up stacks-node and configuring it for mining."
+    link="/stx-mining/setup/stacks-node" >}}
 {{< columns param="end-columns" >}}
