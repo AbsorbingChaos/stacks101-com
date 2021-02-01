@@ -39,6 +39,9 @@ hr {
 .footer-link:hover {
   color: white;
 }
+.footer-tips {
+  overflow-wrap: break-word;
+}
 
 // Import bulma files
 @import "bulma/bulma-0.9.1.sass";
