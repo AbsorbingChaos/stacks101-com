@@ -11,4 +11,4 @@ This image shows the final output of stacks-dump and how it can be copy/pasted i
 
 ![example of stacks-dump copy paste to spreadheet](/img/stacks-dump.gif)
 
-To navigate back to the stacks-dump instructions, [click here](/stx-mining-stacksdump) or use the menu at the top of the page.
+To navigate back to the stacks-dump instructions, [click here](/stx-mining/stacks-dump) or use the menu at the top of the page.
