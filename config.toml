@@ -92,7 +92,7 @@ canonifyURLs = false
       name = "Strategy"
       identifier = "stx-mining-strategy"
       url = "/stx-mining/strategy"
-      weight = 40
+      weight = 50
   [[menu.main]]
     name = "Stacking"
     identifier = "stx-stacking"
