@@ -87,6 +87,12 @@ canonifyURLs = false
       identifier = "stx-mining-stacks-dump"
       url = "/stx-mining/stacks-dump"
       weight = 40
+    [[menu.main]]
+      parent = "stx-mining"
+      name = "Strategy"
+      identifier = "stx-mining-strategy"
+      url = "/stx-mining/strategy"
+      weight = 40
   [[menu.main]]
     name = "Stacking"
     identifier = "stx-stacking"
