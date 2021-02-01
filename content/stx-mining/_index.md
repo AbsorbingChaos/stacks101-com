@@ -5,53 +5,41 @@ description: "Secure the network, compete for STX."
 layout: "section"
 ---
 
-## Mine to 1 Million STX Challenge
+## Quick Overview
 
-The **Mine to 1 Million STX challenge** from Daemon Technologies has 3 parts and was designed to help people learn more about how to mine Stacks using the testnet and following mainnet launch.
+Mining on the Stacks 2.0 network requires spending Bitcoin to compete for the chance to mine the next Stacks block, and in turn, receive a STX reward.
 
-<!-->
+More details can be found in [the Stacks documentation](https://docs.blockstack.org/understand-stacks/mining) and [several resources](resources/) exist for would-be miners on the network.
 
-<div class="container content">
+The basic process for setting up a miner [is outlined in full here](setup/) and includes:
 
-    <h2>Mine to 1 Million STX Challenge</h2>
-    <p>The <strong>Mine to 1 Million STX challenge</strong> from Daemon Technologies has 3 parts and was designed to help people learn more about how to mine Stacks using the testnet and following mainnet launch.</p>
-    <div class="notification is-info is-light">    
-      <h3 class="title is-primary">Parts 1 and 2 have ended</h3>
-      <p>Congratulations to everyone involved! More information can be found at the links below.</p>
-      <div class="buttons">
-        <a href="https://docs.google.com/spreadsheets/d/1kjZo16dYueBqdPaNEjYJQQeZWNXt6oH_9CTrlznG2ak/edit?usp=sharing" rel="noopener" target="_blank"
-        class="button is-success is-light is-outlined">
-          Part 1 - Results
-        </a>
-        <a href="https://forum.stacks.org/t/part-1-of-the-mine-to-1-million-stx-challenge-results/11491" rel="noopener" target="_blank"
-        class="button is-success is-light is-outlined">
-          Part 1 - Forum Post
-        </a>
-        <a href="https://docs.google.com/spreadsheets/d/1WcgJbH9DgBsyW2FVizShx62fUe1uSCzpIIF_GemhCqg/edit#gid=1067819248" rel="noopener" target="_blank"
-        class="button is-success is-light is-outlined">
-          Part 2 - Results
-        </a>
-        <a href="https://forum.stacks.org/t/part-2-mining-contest-update/11515" rel="noopener" target="_blank"
-        class="button is-success is-light is-outlined">
-          Part 2 - Forum Post
-        </a>
-      </div>
-      <h3 class="title is-primary">Part 3 is still TBA</h3>
-      <p>Watch for announcements both in Discord and <a href="http://daemontechnologies.co/minestx-challenge" rel="noopener" target="_blank">on the Daemon Technologies challenge website</a>.</p>
-      <h3 class="title is-primary">Mining Setup Resources</h3>
-      <div class="buttons">
-        <a href="/stx-mining-setup/bitcoin-node" class="button is-primary is-outlined">
-          Bitcoin Node
-        </a>
-        <a href="/stx-mining-setup/stacks-node" class="button is-primary is-outlined">
-          Stacks Node
-        </a>
-        <a href="/stx-mining-setup/stacks-keychain" class="button is-primary is-outlined">
-          Stacks Keychain
-        </a>
-      </div>
-    </div>
-    
-</div>
+1. setting up and maintaining a [Bitcoin node](setup/bitcoin-node/)
+2. setting up and maintaining a [Stacks keychain](setup/stacks-keychain/)
+3. setting up and maintaining a [Stacks miner](setup/stacks-node/)
 
--->
+The Stacks miner (stacks-node) communicates with a local instance of Bitcoin Core (bitcoind) in order to:
+
+- check the BTC balance of the miner
+- perform replace-by-fee (RBF) transactions
+- interact with the Bitcoin blockchain
+
+## System Requirements
+
+### Bitcoin Core
+
+- Disk Space: 350 GB[^1]
+- Download: 500 MB/day
+- Upload: 5 GB/day
+- Memory (RAM): 1 GB
+
+More detailed information can be found on [the Bitcoin Core website.](https://bitcoin.org/en/bitcoin-core/features/requirements)
+
+### Stacks-Node
+
+- Processor: 2 vCPUs
+- Disk Space: 50 GB[^2]
+- Memory (RAM): 8 GB[^3]
+
+[^1]: Pruning is not supported
+[^2]: SSD storage preferred
+[^3]: The Memory (RAM) requirement is mostly used for the initial Stacks 1.0 import, and advanced Linux users can [increase the size of their swap file](https://linuxhint.com/change_swap_size_ubuntu/) and safely operate with 2 GB of memory.
