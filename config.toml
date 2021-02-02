@@ -93,6 +93,12 @@ canonifyURLs = false
       identifier = "stx-mining-strategy"
       url = "/stx-mining/strategy"
       weight = 50
+    [[menu.main]]
+      parent = "stx-mining"
+      name = "Testnet"
+      identifier = "stx-mining-testnet"
+      url = "/stx-mining/testnet"
+      weight = 60
   [[menu.main]]
     name = "Stacking"
     identifier = "stx-stacking"
