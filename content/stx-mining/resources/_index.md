@@ -30,6 +30,7 @@ Option 2 is more advanced, requiring Rust, Git, and the correct build tools for 
 
 - [Stacks Node Setup](/stx-mining/setup) - instructions and links for setting up a Stacks node.
 - [Stacks Node Configuration Options](https://docs.blockstack.org/references/stacks-node-configuration) - full list of supported configuration items and defaults.
+- [Stacks Node RPC Endpoints](https://docs.blockstack.org/understand-stacks/stacks-blockchain-api#proxied-stacks-node-rpc-api-endpoints) - every running Stacks node exposes an RPC API, which allows you to interact with the underlying blockchain.
 - [Understand Mining](https://docs.blockstack.org/understand-stacks/mining) - technical details related to mining on the Stacks 2.0 network.
 - [Community Resources](/stx-community/#mining) - a collection of mining resources from the community.
 - [Mining FAQ](/stx-mining/faq) - answers to common questions from Discord and other sources.
