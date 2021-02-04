@@ -10,4 +10,5 @@ layout: "section"
 
 ### Testnet
 
-Xenon or newer version (Radon) ??
+Xenon?
+Krypton?
