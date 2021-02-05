@@ -30,11 +30,13 @@ Option 2 is more advanced, requiring Rust, Git, and the correct build tools for 
 
 - [Stacks Node Setup](/stx-mining/setup) - instructions and links for setting up a Stacks node.
 - [Stacks Node Configuration Options](https://docs.blockstack.org/references/stacks-node-configuration) - full list of supported configuration items and defaults.
+- [Stacks Node RPC Endpoints](https://github.com/blockstack/stacks-blockchain/blob/master/docs/rpc-endpoints.md) - every running Stacks node exposes an RPC API, which allows you to interact with the underlying blockchain ([another reference here](https://docs.blockstack.org/understand-stacks/stacks-blockchain-api#proxied-stacks-node-rpc-api-endpoints)).
 - [Understand Mining](https://docs.blockstack.org/understand-stacks/mining) - technical details related to mining on the Stacks 2.0 network.
 - [Community Resources](/stx-community/#mining) - a collection of mining resources from the community.
 - [Mining FAQ](/stx-mining/faq) - answers to common questions from Discord and other sources.
 - [Stacks 2.0 Mining Questions](https://paper.dropbox.com/doc/Stacks-2.0-Mining-Questions--BEWhyjHlB2c4WNH5pkvL8bpmAg-63CU2wD4zQsiiU6XPUtlr) - a list of questions from community miners, and the basis of the [Mining FAQ](/stx-mining/faq)
 - [Mining Community](https://paper.dropbox.com/doc/Mining-Community--BDlvJZcCd2NpQtx6beGVptijAg-mJbtjhpqzNq9iCZHASFot) - a shared document from community miners used during open community meetings
+- [STX Mining: The First 1000 Blocks of Stacks 2.0](https://daemontechnologies.co/first-1000-blocks) - blog post from Xan at Daemon Technologies analyzing the first 1000 blocks
 
 ## Stacks Mining Tools
 

@@ -41,6 +41,7 @@ layout: "section"
 - [Stacks Community Groups](https://community.blockstack.org/groups) - Community channels to stay in touch via Discord, Telegram, WeChat, and KakaoTalk.
 - [Stacks Evangelists](https://community.blockstack.org/evangelists) - Community leaders dedicated to spreading the word about Stacks, it's capabilities, and it's usage.
 - [Stacks Grants](https://grants.stacks.org) - Funding program for tools, services, education, evangelism, education, collaboration, core protocol development, and more.
+- [Stacks Investing and Trading](https://twitter.com/StacksTrade) - 100% community-managed group also [on Telegram.](https://t.me/StacksTrade)
 - [Freehold](https://joinfreehold.com) - A community of cryptocurrency stakeholders focused on furthering the reputation, usefulness, and mission of their respective holdings.
 
 ### Clarity
