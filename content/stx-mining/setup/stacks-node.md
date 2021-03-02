@@ -108,6 +108,7 @@ local_peer_seed = "your-private-key-seed"
 miner = true
 # uncomment to mine microblocks
 # mine_microblocks = true
+wait_time_for_microblocks = 30000
 bootstrap_node = "02da7a464ac770ae8337a343670778b93410f2f3fef6bea98dd1c3e9224459d36b@seed-0.mainnet.stacks.co:20444,02afeae522aab5f8c99a00ddf75fbcb4a641e052dd48836408d9cf437344b63516@seed-1.mainnet.stacks.co:20444,03652212ea76be0ed4cd83a25c06e57819993029a7b9999f7d63c36340b34a4e62@seed-2.mainnet.stacks.co:20444"
 # uncomment working_dir line below to change the directory
 # where the stacks blockchain data is stored.
@@ -125,7 +126,6 @@ password = "your-bitcoind-password"
 # NOTE: adjust values below based on your strategy
 satoshis_per_byte = 100
 burn_fee_cap = 20000
-wait_time_for_microblocks = 30000
 ```
 
 {{< notification params="is-info is-light"
