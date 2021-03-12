@@ -106,22 +106,16 @@ canonifyURLs = false
     weight = 50
     [[menu.main]]
       parent = "stx-stacking"
-      name = "Delegation"
+      name = "Delegation FAQ"
       identifier = "stx-stacking-delegation"
       url = "/stx-stacking/delegation"
       weight = 10
     [[menu.main]]
       parent = "stx-stacking"
-      name = "FAQ"
-      identifier = "stx-stacking-faq"
-      url = "/stx-stacking/faq"
-      weight = 20
-    [[menu.main]]
-      parent = "stx-stacking"
       name = "Resources"
       identifier = "stx-stacking-resources"
       url = "/stx-stacking/resources"
-      weight = 30
+      weight = 20
   [[menu.main]]
     name = "Videos"
     identifier = "stx-videos"
