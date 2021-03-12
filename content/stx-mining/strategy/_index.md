@@ -5,9 +5,6 @@ description: "Wise words from other miners."
 layout: "section"
 ---
 
-{{< notification params="is-warning is-light"
- content="<span class=\"has-text-weight-bold\">Note:</span> this area is still under construction, more updates coming soon!" >}}
-
 ### General Strategy for Mining
 
 The point of the competition is to learn more about how mining will work on mainnet. Instead of giving specific ideas, it is better to formulate your own strategy based on how Proof of Transfer (PoX) works.
