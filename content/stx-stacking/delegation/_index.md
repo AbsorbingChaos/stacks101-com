@@ -5,7 +5,6 @@ description: "Answers to common questions."
 layout: "section"
 ---
 
-
 ### How to select a pool?
 
 ### Can I continously stack by using a pool?
