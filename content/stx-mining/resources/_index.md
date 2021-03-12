@@ -37,10 +37,11 @@ Option 2 is more advanced, requiring Rust, Git, and the correct build tools for 
 - [Stacks 2.0 Mining Questions](https://paper.dropbox.com/doc/Stacks-2.0-Mining-Questions--BEWhyjHlB2c4WNH5pkvL8bpmAg-63CU2wD4zQsiiU6XPUtlr) - a list of questions from community miners, and the basis of the [Mining FAQ](/stx-mining/faq)
 - [Mining Community](https://paper.dropbox.com/doc/Mining-Community--BDlvJZcCd2NpQtx6beGVptijAg-mJbtjhpqzNq9iCZHASFot) - a shared document from community miners used during open community meetings
 - [STX Mining: The First 1000 Blocks of Stacks 2.0](https://daemontechnologies.co/first-1000-blocks) - blog post from Xan at Daemon Technologies analyzing the first 1000 blocks
+- [STX Mining Update: The First 5000 Blocks of Stacks 2.0](https://daemontechnologies.co/first-5000-blocks) - updated blog post from Xan at Daemon Technologies analyzing the first 5000 blocks
 
 ## Stacks Mining Tools
 
-- [Mining-Bot](https://github.com/Daemon-Technologies/Mining-Bot) - A graphical interface for stacks-node with built-in blockchain statistics. *[(coming soon!)](https://forum.stacks.org/t/update-on-daemons-mining-bot/11646)*
+- [Mining-Bot](https://github.com/Daemon-Technologies/Mining-Bot) - A graphical interface for stacks-node with built-in blockchain statistics.
 - [Stacks-Dump](https://github.com/psq/stacks-dump) - A console application for searching stacks-node storage and displaying blockchain statistics.
 - [Stacks Explorer](http://explorer.stacks.co/) - transaction and block explorer for Stacks 2.0.
 - [Stacks Explorer Sandbox](http://explorer.stacks.co/sandbox) - send STX, test, deploy, and call contracts.
