@@ -5,10 +5,6 @@ description: "Answers to common questions."
 layout: "section"
 ---
 
-The stacks protocol supports stacking, where users can lock up their STX for a chosen period and in return receive BTC committed by Stacks miners.
-
-[Stacking is not the same as staking](https://stacks.org/stacking#rec260034192) implemented by other networks, and your funds never leave your wallet. There is no risk of losing them.
-
 Read below to see answers to common questions around delegated (pooled) stacking, or [view the stacking resources](/stx-stacking/resources) for more information.
 
 ---
