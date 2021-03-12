@@ -26,7 +26,7 @@ layout: "section"
 This script should be run against the `stacks-node` working directory, which is saved to `/tmp` by default unless the `working_dir` value is set in the stacks-node toml config file.
 
 {{< notification params="is-info is-light"
- content="<span class=\"has-text-weight-bold\">Note:</span> on Windows, the default temp directory used by stacks-node is <code>C:\tmp</code>, which is accessible from <code>/mnt/c/tmp</code> on WSL." >}}
+ content="<span class=\"has-text-weight-bold\">Note:</span> on Windows, the default temp directory used by stacks-node is on the C drive under <code>tmp</code>, which is accessible from <code>/mnt/c/tmp</code> on WSL." >}}
 
 An example of the folder name: `/tmp/stacks-testnet-5c87e24790411516`
 

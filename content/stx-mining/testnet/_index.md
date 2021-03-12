@@ -10,5 +10,4 @@ layout: "section"
 
 ### Testnet
 
-Xenon?
-Krypton?
+TODO: Add xenon mining instructions.

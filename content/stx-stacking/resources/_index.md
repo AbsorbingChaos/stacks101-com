@@ -5,13 +5,10 @@ description: "Keep it simple, stacker."
 layout: "section"
 ---
 
-{{< notification params="is-warning is-light"
- content="<span class=\"has-text-weight-bold\">Note:</span> this area is still under construction, more updates coming soon!" >}}
+## Stacking Resources
 
-[Hold STX, Earn BTC](https://stacks.org/stacking)
-
-[A new way to earn Bitcoin](https://www.stacks.co/stacking-and-stx)
-
-[Understand Stacking](https://docs.blockstack.org/understand-stacks/stacking)
-
-[SIP-007](https://github.com/stacksgov/sips/blob/main/sips/sip-007/sip-007-stacking-consensus.md)
+- stacking.club: [Statistics and information from each cycle](https://stacking.club)
+- stacks.co: [A new way to earn Bitcoin](https://www.stacks.co/stacking)
+- Stacks Foundation: [Hold STX, Earn BTC](https://stacks.org/stacking)
+- Stacks Documentation: [Understand Stacking](https://docs.blockstack.org/understand-stacks/stacking)
+- Stacks Improvement Proposal (SIP) 007: [Stacking Consensus](https://github.com/stacksgov/sips/blob/main/sips/sip-007/sip-007-stacking-consensus.md)
