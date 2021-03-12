@@ -30,7 +30,7 @@ layout: "section"
 *Image remixed based on original from* [@dantrevino and StacksPack](https://gitlab.com/riot.ai/stackspack)
 
 > "The greatness of a community is most accurately measured by the compassionate actions of its members."
-> 
+>
 > – Coretta Scott King
 
 ## Community Resources
@@ -62,7 +62,8 @@ layout: "section"
 
 ### Stacking
 
-- [Stackulator](https://www.stxstacking.com/) - Stacking calculator to help calculate what you can earn through stacking.
+- [stacking.club](https://stacking.club/) - Stacking information including details on the last, current, and next cycle.
+- [Friedger Pool](https://pool.friedger.de/) - A community-led pooling initiative that pays out in STX instead of BTC.
 
 ## Additions / Corrections / Updates
 
