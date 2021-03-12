@@ -2,9 +2,12 @@
 
 ## Run Locally
 
-1. Download this repository
-2. Run `hugo server`
-3. View at `localhost:1313`
+1. Install Hugo
+   - Linux: `sudo snap install hugo`
+   - [more options](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo)
+2. Download this repository
+3. Run `hugo server`
+4. View at `localhost:1313`
 
 Content is [stored in /content](./content) as a Hugo page bundle.
 
