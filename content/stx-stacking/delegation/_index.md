@@ -101,9 +101,13 @@ No. Revoking delegation does not affect the current state and only affects stack
 
 ### What is the difference between locking period and delegation period?
 
-The locking period represents the block height at which your STX will unlock. For example, if you lock your STX for 6 months with a pool, then once stacked your STX will not be transferrable for 6 months, even if you revoke delegation.
+The locking period is defined by the pool admin, and represents how long your STX are locked. For example, if you lock your STX for 6 months with a pool, then once stacked your STX will not be transferrable for 6 months, even if you revoke delegation.
 
-The delegation period represents the 
+After each locking period is a cooldown cycle. You can switch between pools at any time, and you can join a new pool after the cooldown cycle of your last locking period.
+
+The delegation period is defined by the wallet owner, and represents the pool membership. The pool provider is able to stack STX on your behalf during the delegation period, which can be indefinite.
+
+The locking period is always shorter than the delegation period, and generally there are several locking periods while you are delegating.
 
 ### My Stacks are still locked. Can I unlock by revoking delegation?
 
@@ -113,7 +117,7 @@ Revoking delegation ensures the pool provider cannot lock your STX for any addit
 
 ### How can I see that my stacks will participate in the next reward cycle? Did I do everything right?
 
-
+There is no simple interface for this right now, however you can call the PoX contract from the [explorer sandbox](https://explorer.stacks.co/sandbox?chain=mainnet) to see whether the pool admin has delegated your STX.
 
 ### What is the difference between custodial and non-custodial pools?
 
