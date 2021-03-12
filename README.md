@@ -15,6 +15,12 @@ Content is [stored in /content](./content) as a Hugo page bundle.
 - Additional resources, such as images, can be stored in the same folder
 - Markdown shortcodes are [available in /layouts/shortcodes](./layouts/shortcodes)
 
+The menu is controlled by the [base configuration (config.toml)](./config.toml) in the root directory.
+
+- Menu items are specified individually rather than created automatically
+- Nesting (sub-menus) are supported and connected via a `parent` field
+- More information on formatting and capabilities can be found in the [Hugo docs](https://gohugo.io/content-management/menus/#add-non-content-entries-to-a-menu)
+
 ## Access Online
 
 Pushes to the `develop` branch:
