@@ -17,27 +17,34 @@ layout: "section"
 ## Using a STX Wallet
 
 {{< lite-yt id="C6SvALGZxo4" title="== How to set up and use the STX wallet from Hiro? Quick tutorial"
- description="This tutorial shows how to create STX wallet with Hiro and make transaction. Let me know if you have any question. Just write it down in comments." >}}
+ description="This tutorial shows how to create STX wallet with Hiro and make transaction. Let me know if you have any question. Just write it down in comments."
+ author="Marek Sławiński" >}}
 
 {{< lite-yt id="D_QTgBmOfCE" title="Setting up and using Xverse WALLET - 2 MINS TUTORIAL"
- description="Here you can learn about setting up and using the the Xverse Mobile Wallet Public Beta by SecretKey Labs." >}}
+ description="Here you can learn about setting up and using the the Xverse Mobile Wallet Public Beta by SecretKey Labs."
+ author="Marek Sławiński" >}}
 
 {{< lite-yt id="7gbwpjOUB-k" title="How to set up and use the Boom STX wallet from RunRiot? 5 MINS TUTORIAL"
- description="A quick walkthrough on how to set up and fund the Boom STX wallet." >}}
+ description="A quick walkthrough on how to set up and fund the Boom STX wallet."
+ author="Marek Sławiński" >}}
 
 ## Stacking STX
 
 {{< lite-yt id="GXm3slEL1SE" title="🤹 Stacking STX via HIRO Wallet (otrzymaj Bitcoin dzięki Stacks) (+KONKURS)"
- description="W tym filmie omawiam podstawy stackowania STX, czyli kryptowaluty sieci Stacks. Stacking zabezpiecza sieć Stacks, dodaje wartości sieci Bitcoin, i pozwala zarabiać nagrody BTC. Pokazuje jak to zrobić przez Hiro wallet, czyli w sposob non-Custodial. Jednym z operatorów / walidatorów jest Staked, i na tym przykladzie oraz na przykladzie Friedger's pool omawiam podstawowe zasady." >}}
+ description="W tym filmie omawiam podstawy stackowania STX, czyli kryptowaluty sieci Stacks. Stacking zabezpiecza sieć Stacks, dodaje wartości sieci Bitcoin, i pozwala zarabiać nagrody BTC. Pokazuje jak to zrobić przez Hiro wallet, czyli w sposob non-Custodial. Jednym z operatorów / walidatorów jest Staked, i na tym przykladzie oraz na przykladzie Friedger's pool omawiam podstawowe zasady."
+ author="Daily Dose of Discomfort" >}}
 
 {{< lite-yt id="WroVXXcF5Bk" title="== Stacking STX to earn BTC using Hiro Wallet. 3 MINS TUTORIAL"
- description="A quick video showing how to stack STX directly from the Hiro wallet (if you meet the minimum threshold)." >}}
+ description="A quick video showing how to stack STX directly from the Hiro wallet (if you meet the minimum threshold)."
+ author="Marek Sławiński" >}}
 
 {{< lite-yt id="H-fDI-LuDik" title="(₿Ӿ₿) START Stacking - czyli jak zgarniać Bitcoin (BTC) dzięki Stacks (STX)"
- description="💵💵💵Jak zacząć układać w stosy i otrzymać dodatkową nagrodę? Zobacz mój opis wideo." >}}
+ description="💵💵💵Jak zacząć układać w stosy i otrzymać dodatkową nagrodę? Zobacz mój opis wideo."
+ author="Daily Dose of Discomfort" >}}
 
 {{< lite-yt id="0ZWhVRknvvU" title="#EarnBitcoinwithStacks​ HOW TO STACK STX AND EARN BTC ON OKCoin Exchange. $STX $BTC Blockchain"
- description="A quick walkthrough of stacking STX on OKCoin from mobile." >}}
+ description="A quick walkthrough of stacking STX on OKCoin from mobile."
+ author="Algorithm" >}}
 
 ## Video Archive
 
