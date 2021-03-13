@@ -1,21 +1,24 @@
-{{ if (.Get "title") }}
-  <h3 id="{{ anchorize (.Get "title") }}">
-    <a href="#{{ anchorize (.Get "title") }}"
-      class="header-link">
-      {{ .Get "title" | markdownify }}
-      <span class="icon pl-1 is-hidden">
-        <i class="fa fa-link" aria-hidden="true"></i>
-      </span>
-    </a>
-  </h3>
-{{ end }}
-
-<lite-youtube videoid="{{.Get "id"}}"></lite-youtube>
-
-{{ if (.Get "description") }}
-  <article class="message is-dark pt-4">
-    <div class="message-body">
-      {{ .Get "description" | markdownify }}
-    </div>
-  </article>
-{{ end }}
+<div class="card px-2 py-1 mx-2 my-6">
+  <div class="card-content">
+    {{ if (.Get "title") }}
+      <h3 id="{{ anchorize (.Get "title") }}">
+        <a href="#{{ anchorize (.Get "title") }}"
+          class="header-link">
+          {{ .Get "title" | markdownify }}
+          <span class="icon pl-1 is-hidden">
+            <i class="fa fa-link" aria-hidden="true"></i>
+          </span>
+        </a>
+      </h3>
+    {{ end }}
+    <lite-youtube videoid="{{.Get "id"}}" class="has-ratio"></lite-youtube>
+    {{ if (.Get "description") }}
+      <p>{{ .Get "description" | markdownify }}</p>
+    {{ end }}
+    <p>{{ if (.Get "author") }}Author: {{ .Get "author" | markdownify }}{{ end }} 
+      <a href="https://youtu.be/{{.Get "id"}}" title="View on Youtube" rel="nofollower" target="_blank">
+        <span class="icon"><i class="fa fa-youtube" aria-hidden="true"></i></span>
+      </a>
+    </p>
+  </div>
+</div>
