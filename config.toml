@@ -18,7 +18,7 @@ canonifyURLs = false
 [params]
   company = "Stacks 101"
   title = "Stacks 101"
-  tagline = "Tutorials, lessons, and info about Stacks (STX)"
+  tagline = "Resources, tutorials, and videos about Stacks (STX)"
   description = "Community curated Stacks (STX) knowledge, resources, and educational content."
   copyright = "© 2020 Absorbing Chaos"
 
@@ -30,11 +30,11 @@ canonifyURLs = false
 
 # used for SEO image tags in head
 [params.logo]
-  img = "img/stacks-nexus-800x400.png"
+  img = "img/stacks-101-500x250-white.png"
   type = "image/png"
-  width = "800"
-  height = "400"
-  alt = "The stacks nexus symbol with the metaverse gradient behind it."
+  width = "500"
+  height = "250"
+  alt = "The numbers 101 in a rectangular border with the words Stacks STX, resources, tutorials, and videos."
 
 [menu]
   [[menu.main]]
