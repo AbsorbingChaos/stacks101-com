@@ -5,30 +5,6 @@ description: "Moving STX forward, together!"
 layout: "section"
 ---
 
-```none
-    |||||||               |||||||
-     |||||||             |||||||
-      |||||||           |||||||
-       |||||||         |||||||
-        |||||||       |||||||
-         |||||||     |||||||
-          |||||||   |||||||
-|||||||||||||||||| ||||||||||||||||||
-|||||||||||||||||||||||||||||||||||||
-
-|||||||||||||||||||||||||||||||||||||
-|||||||||||||||||| ||||||||||||||||||
-          |||||||   |||||||
-         |||||||     |||||||
-        |||||||       |||||||
-       |||||||         |||||||
-      |||||||           |||||||
-     |||||||             |||||||
-    |||||||               |||||||
-```
-
-*Image remixed based on original from* [@dantrevino and StacksPack](https://gitlab.com/riot.ai/stackspack)
-
 > "The greatness of a community is most accurately measured by the compassionate actions of its members."
 >
 > – Coretta Scott King
@@ -37,23 +13,24 @@ layout: "section"
 
 ### General
 
+- [Stacks Accelerator](https://stacks.ac/) - 3-month mentorship-driven program for teams building the internet of our future.
+- [Stacks Advocates](https://community.stacks.org/advocates) - Community leaders dedicated to spreading the word about Stacks, it's capabilities, and it's usage.
 - [Stacks Community](https://community.stacks.org/) - Independent entities, developers, and community members working to build a user-owned internet on Bitcoin.
 - [Stacks Community Groups](https://community.stacks.org/groups) - Community channels to stay in touch via Discord, Telegram, WeChat, and KakaoTalk.
-- [Stacks Evangelists](https://community.stacks.org/evangelists) - Community leaders dedicated to spreading the word about Stacks, it's capabilities, and it's usage.
 - [Stacks Grants](https://github.com/stacksgov/Stacks-Grants) - Funding program for tools, services, education, evangelism, education, collaboration, core protocol development, and more.
 - [Stacks Investing and Trading](https://twitter.com/StacksTrade) - 100% community-managed group also [on Telegram.](https://t.me/StacksTrade)
-- [Freehold](https://joinfreehold.com) - A community of cryptocurrency stakeholders focused on furthering the reputation, usefulness, and mission of their respective holdings.
 
 ### Clarity
 
+- [Clarinet](https://github.com/hirosystems/clarinet) - A Clarity runtime packaged as a command line tool, designed to facilitate smart contract understanding, development, testing and deployment.
 - [Clarity.tools](http://clarity.tools/) - An interactive programming environment with live results and advanced features.
-- [Clarity Web IDE](https://github.com/friedger/clarity-js-sdk/blob/feature/web-ide/packages/clarity-tutorials/README-web-ide.md) - A gitpod-based IDE to develop and test Clarity programs directly from the browser.
 - [Clarity Demo Series](https://github.com/friedger/clarity-demo) - An educational demo series featuring Stacks community members.
-- [Clarity Language Server](https://marketplace.visualstudio.com/items?itemName=lgalabru.clarity-lsp) - Clarity LSP for VSCode
+- [Clarity Documentation](https://docs.stacks.co/references/language-overview) - Overview of the Clarity language constructs including a detailed list of all functions, keywords, and types.
+- [Clarity Language Server](https://github.com/hirosystems/clarity-lsp) - Clarity LSP for VSCode
+- [Clarity Web IDE](https://github.com/friedger/clarity-js-sdk/blob/feature/web-ide/packages/clarity-tutorials/README-web-ide.md) - A gitpod-based IDE to develop and test Clarity programs directly from the browser.
 
 ### Mining
 
-- [Miner Setup Script](https://github.com/AbsorbingChaos/stx-miner-script) - A setup script that will help you run a miner node using Ubuntu Server.
 - [Mining Calculator](https://friedger.github.io/mining-calculator/) - Mining calculator to help calculate miner profitability and strategy.
 - [StacksPack](https://gitlab.com/riot.ai/stackspack) - A Stacks blockchain miner or follower node for Raspberry Pi and similar.
 - [Stacks-Dump](https://github.com/psq/stacks-dump) - Tool to dump info from stacks-node storage for analyzing the blockchain.
