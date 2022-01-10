@@ -1,43 +1,67 @@
 <!-- HEAD -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="generator" content="Hugo">
+<meta name="generator" content="Hugo" />
 <title>{{ .Site.Params.Title }}</title>
 
-{{ $stacks101CSS := resources.Get "stacks101.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
-<link rel="stylesheet" href="{{ $stacks101CSS.RelPermalink }}">
+{{ $stacks101CSS := resources.Get "stacks101.scss" | resources.ToCSS (dict
+"outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $stacks101CSS.RelPermalink }}" />
 
 <!-- Sitemap and RSS -->
-<link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | relURL }}' />
+<link
+  rel="sitemap"
+  type="application/xml"
+  title="Sitemap"
+  href='{{ "sitemap.xml" | relURL }}'
+/>
 {{ with .OutputFormats.Get "RSS" }}
-  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Params.Title }}" />
-  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Params.Title }}" />
+<link
+  href="{{ .Permalink }}"
+  rel="alternate"
+  type="application/rss+xml"
+  title="{{ $.Site.Params.Title }}"
+/>
+<link
+  href="{{ .Permalink }}"
+  rel="feed"
+  type="application/rss+xml"
+  title="{{ $.Site.Params.Title }}"
+/>
 {{ end }}
 
 <!-- FAVICONS -->
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/android-icon-192x192.png"
+/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
 <!-- APP SETTINGS -->
-<link rel="manifest" href="/manifest.json">
-<meta name="application-name" content="{{ .Site.Params.Company }}">
+<link rel="manifest" href="/manifest.json" />
+<meta name="application-name" content="{{ .Site.Params.Company }}" />
 <meta name="msapplication-TileColor" content="#5546FF" />
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 <meta name="msapplication-tap-highlight" content="no" />
-<meta name="apple-mobile-web-app-title" content="{{ .Site.Params.Title }}">
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Params.Title }}" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
 <meta name="apple-touch-fullscreen" content="yes" />
 <meta name="theme-color" content="#5546FF" />
 
@@ -50,11 +74,14 @@
 <meta name="HandheldFriendly" content="True" />
 
 <!-- Facebook Open Graph -->
-<meta property="og:url" content="{{ .Permalink }}" /> 
+<meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Site.Params.Company }}" />
 <meta property="og:description" content="{{ .Site.Params.Description }}" />
 <meta property="og:image" content="{{ .Site.Params.Logo.img | relURL }}" />
-<meta property="og:image:secure_url" content="{{ .Site.Params.Logo.img | relURL }}" />
+<meta
+  property="og:image:secure_url"
+  content="{{ .Site.Params.Logo.img | relURL }}"
+/>
 <meta property="og:image:type" content="{{ .Site.Params.Logo.type }}" />
 <meta property="og:image:width" content="{{ .Site.Params.Logo.width }}" />
 <meta property="og:image:height" content="{{ .Site.Params.Logo.height }}" />
@@ -62,14 +89,15 @@
 <meta property="og:site_name" content="{{ .Site.Params.Company }}" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ALL_ALL" />
-<meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }}" />
+<meta property="og:updated_time" content="{{ .Lastmod.Format
+"2006-01-02T15:04:05Z0700" | safeHTML }}" />
 
 <!-- Twitter Cards 
 https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="{{ .Site.Params.author.twitter }}">
-<!-- <meta name="twitter:creator" content="@individual_account"> -->
-<meta name="twitter:description" content="{{ .Site.Params.Description }}">
-<meta name="twitter:title" content="{{ .Site.Params.Title }}">
-<meta name="twitter:image" content="{{ .Site.Params.Logo.img | relURL }}">
-<meta name="twitter:image:alt" content="{{ .Site.Params.Logo.alt }}">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ .Site.Params.author.twitter }}" />
+<meta name="twitter:creator" content="{{ .Site.Params.author.twitter }}" />
+<meta name="twitter:description" content="{{ .Site.Params.Description }}" />
+<meta name="twitter:title" content="{{ .Site.Params.Title }}" />
+<meta name="twitter:image" content="{{ .Site.Params.Logo.img | relURL }}" />
+<meta name="twitter:image:alt" content="{{ .Site.Params.Logo.alt }}" />

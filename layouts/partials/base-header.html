@@ -1,38 +1,48 @@
 <div class="container">
-<nav class="navbar" aria-label="main navigation">
-  <div class="navbar-brand">
-    <img src="/android-icon-48x48.png"
-      alt="Stacks 101 logo with 101 over the metaverse."
-      height="58" width="58" />
-    <a role="button"
-     class="navbar-burger"
-     aria-label="menu" 
-     aria-expanded="false" 
-     data-target="stxNav">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="stxNav" class="navbar-menu">
-    <div class="navbar-start">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-          {{ if .HasChildren }}
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a> 
-              <div class="navbar-dropdown">
-                {{ range .Children }}
-                  <a class="navbar-item" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
-                {{ end }}
-              </div>
-            </div>
-          {{ else }}
-            <a class="navbar-item" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a> 
-          {{ end }}
-      {{ end }}
+  <nav class="navbar" aria-label="main navigation">
+    <div class="navbar-brand">
+      <img
+        src="/stacks101-logo-light.png"
+        class="mx-3"
+        alt="Stacks 101 logo with 101 over the metaverse."
+        height="58"
+        width="58"
+      />
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="stxNav"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-  </div>
-</nav>
+
+    <div id="stxNav" class="navbar-menu has-text-weight-bold">
+      <div class="navbar-start">
+        {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren
+        }}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="{{ .URL }}" title="{{ .Name }}"
+            >{{ .Name }}</a
+          >
+          <div class="navbar-dropdown">
+            {{ range .Children }}
+            <a class="navbar-item" href="{{ .URL }}" title="{{ .Name }}"
+              >{{ .Name }}</a
+            >
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
+        <a class="navbar-item" href="{{ .URL }}" title="{{ .Name }}"
+          >{{ .Name }}</a
+        >
+        {{ end }} {{ end }}
+      </div>
+    </div>
+  </nav>
 </div>

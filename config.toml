@@ -20,21 +20,21 @@ canonifyURLs = false
   title = "Stacks 101"
   tagline = "Resources, tutorials, and videos about Stacks (STX)"
   description = "Community curated Stacks (STX) knowledge, resources, and educational content."
-  copyright = "© 2020 Absorbing Chaos"
+  copyright = "© 2020 whoabuddy"
 
 [params.author]
   name = "Jason Schrader"
   github = "https://github.com/whoabuddy"
   sitename = "Stacks101"
-  twitter = "@absorbingchaos"
+  twitter = "@whoabuddydev"
 
 # used for SEO image tags in head
 [params.logo]
-  img = "img/stacks-101-500x250-white.png"
+  img = "img/stacks101-logo-text.png"
   type = "image/png"
-  width = "500"
-  height = "250"
-  alt = "The numbers 101 in a rectangular border with the words Stacks STX, resources, tutorials, and videos."
+  width = "1028"
+  height = "500"
+  alt = "The stacks nexus symbol followed by 101."
 
 [menu]
   [[menu.main]]

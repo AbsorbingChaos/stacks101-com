@@ -4,31 +4,100 @@
       <div class="column">
         <p class="is-title">Navigation</p>
         <div class="columns is-flex-direction-column">
-          {{ $currentPage := . }}
-          {{ range .Site.Menus.main }}
+          {{ $currentPage := . }} {{ range .Site.Menus.main }}
           <div class="column">
-            <a class="is-link footer-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            <a
+              class="is-link footer-link"
+              href="{{ .URL }}"
+              title="{{ .Title }}"
+              >{{ .Name }}</a
+            >
           </div>
           {{ end }}
         </div>
       </div>
       <div class="column">
-        <p>Designed with ♥ by <a class="is-link footer-link" href="https://github.com/whoabuddy" rel="noopener" target="_blank">@whoabuddy</a> as a collection of resources built while assisting others in the <a class="is-link footer-link" href="https://community.stacks.org/" rel="noopener" target="_blank">Stacks Community</a>.</p>
-        <p>Thank you to everyone who contributed content, assisted others, provided advice, and made this possible!</p>
-        <p>If you want to learn more about me and why I built this site, check out my <a class="is-link footer-link" href="https://blog.blockstack.org/evangelist-spotlight-jason-schrader/" rel="noopener" target="_blank">Evangelist Spotlight</a>.</p>
+        <p>
+          Designed with ♥ by
+          <a
+            class="is-link footer-link"
+            href="https://github.com/whoabuddy"
+            rel="noopener"
+            target="_blank"
+            >@whoabuddy</a
+          >
+          as a collection of resources built while assisting others in the
+          <a
+            class="is-link footer-link"
+            href="https://community.stacks.org/"
+            rel="noopener"
+            target="_blank"
+            >Stacks Community</a
+          >.
+        </p>
+        <p>
+          Thank you to everyone who contributed content, assisted others,
+          provided advice, and made this possible!
+        </p>
+        <p>
+          If you want to learn more about me and why I built this site, check
+          out my
+          <a
+            class="is-link footer-link"
+            href="https://blog.blockstack.org/evangelist-spotlight-jason-schrader/"
+            rel="noopener"
+            target="_blank"
+            >Evangelist Spotlight</a
+          >.
+        </p>
         <p>BTC or STX for ☕ or 🍺:</p>
         <p class="footer-tips">bc1q962j6tf9hyxeuhj9e3u0zhgn6dqjcrlz9cljmr</p>
         <p class="footer-tips">SP3CK642B6119EVC6CT550PW5EZZ1AJW661ZMQTYD</p>
       </div>
       <div class="column">
-          <p><a class="is-link footer-link" href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
-          <p><a class="is-link footer-link" href="https://bulma.io" target="_blank" rel="noopener">Styled with Bulma</a></p>
-          <p><a class="is-link footer-link" href="https://workers.cloudflare.com" target="_blank" rel="noopener">Deployed via Cloudflare</a></p>
-          <p><a class="is-link footer-link" href="https://github.com/absorbingchaos/stacks101-com/" target="_blank" rel="noopener">Page last updated {{ .Lastmod.Format "2006-01-02" }}</a></p>
-          <p>{{ .Site.Params.Copyright }}</p>
-          <img src="/android-icon-48x48.png"
-            alt="Stacks 101 logo with 101 over the metaverse."
-            height="58" width="58" />
+        <p>
+          <a
+            class="is-link footer-link"
+            href="https://gohugo.io"
+            target="_blank"
+            rel="noopener"
+            >Built with Hugo</a
+          >
+        </p>
+        <p>
+          <a
+            class="is-link footer-link"
+            href="https://bulma.io"
+            target="_blank"
+            rel="noopener"
+            >Styled with Bulma</a
+          >
+        </p>
+        <p>
+          <a
+            class="is-link footer-link"
+            href="https://workers.cloudflare.com"
+            target="_blank"
+            rel="noopener"
+            >Deployed via Cloudflare</a
+          >
+        </p>
+        <p>
+          <a
+            class="is-link footer-link"
+            href="https://github.com/absorbingchaos/stacks101-com/"
+            target="_blank"
+            rel="noopener"
+            >Page last updated {{ .Lastmod.Format "2006-01-02" }}</a
+          >
+        </p>
+        <p>{{ .Site.Params.Copyright }}</p>
+        <img
+          src="/stacks101-logo-dark.png"
+          alt="Stacks 101 logo with 101 over the metaverse."
+          height="58"
+          width="58"
+        />
       </div>
     </div>
   </div>
