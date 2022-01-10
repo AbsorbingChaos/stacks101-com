@@ -1,6 +1,6 @@
 // Bulma customizations
 
-$primary: #5546FF;
+$primary: #5546ff;
 $body-size: 18px;
 $size-1: 4rem;
 $size-2: 3rem;
@@ -12,7 +12,7 @@ $size-7: 1rem;
 $link: $primary;
 $link-visited: $primary;
 $footer-background-color: black;
-$footer-color: #CCC;
+$footer-color: #ccc;
 
 // custom CSS
 hr {
@@ -39,14 +39,11 @@ hr {
 .footer-link:hover {
   color: white;
 }
-.footer-tips {
-  overflow-wrap: break-word;
-}
 
 // Import bulma files
 @import "bulma/bulma-0.9.1.sass";
 
-// Import fork awesome files 
+// Import fork awesome files
 @import "fork-awesome/fork-awesome.scss";
 
 // Import lite-yt styles
