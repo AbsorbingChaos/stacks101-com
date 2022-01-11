@@ -5,9 +5,6 @@ description: "Answers to common questions."
 layout: "section"
 ---
 
-{{< notification params="is-warning is-light"
- content="<span class=\"has-text-weight-bold\">Note:</span> this area is still under construction, more updates coming soon!" >}}
-
 ### Table of Contents
 
 - [Using bitcoind and bitcoin-cli](#using-bitcoind-and-bitcoin-cli)
