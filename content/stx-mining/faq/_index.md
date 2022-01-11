@@ -54,33 +54,19 @@ Generate keychain using [stacks-gen](https://github.com/psq/stacks-gen) from Pas
 npx -q stacks-gen sk --testnet > keychain.json
 ```
 
-*Note: the commands above will save the keychain information to a file named `keychain.json`. You can view this file in a text editor or via the command line using `cat keychain.json`. or `type keychain.json`*
-
------
-
-### What endpoints are used with stacks-node?
-
-It depends on what network you want to target.
-
-Mainnet:
-
-Testnet:
+*Note: the commands above will save the keychain information to a file named `keychain.json`. You can view this file in a text editor or via the command line using `cat keychain.json` or `type keychain.json`*
 
 -----
 
 ### What is the correct configuration file to use with stacks-node?
 
-An example of a working configuration file is [available here](/stx-mining-setup/#krypton-configuration-file).
-
-xenon config
-mainnet config
-(both from stx-miner-setup??)
+An example of a working configuration file is [available here](https://github.com/blockstack/stacks-blockchain/blob/master/testnet/stacks-node/conf/mainnet-miner-conf.toml).
 
 -----
 
 ### Should I use my 24 word phrase for the seed value in the config?
 
-No, this should be the hex of the private key, which is a long string provided as part of your keychain.
+No, this should be the hex-encoded string of the private key, which is provided as part of your keychain.
 
 -----
 
@@ -92,13 +78,13 @@ The BTC and STX addresses are derived from the private key, which is provided to
 
 ### Is using a local bitcoind instance required?
 
-Yes.
+Yes, and an example configuration [can be found here](https://docs.stacks.co/start-mining/mainnet#running-bitcoind-locally).
 
 -----
 
 ### How can I set up a local instance of bitcoind?
 
-See Bitcoin Core website.
+See the [Bitcoin Core website](https://bitcoincore.org/en/download/).
 
 -----
 
@@ -116,16 +102,16 @@ There is a great resource for [Learning Bitcoin from the Command-Line](https://g
 If running on the CLI, by querying the /v2/info endpoints of your miner against the main one.
 
 ```none
-Testnet: http://krypton.blockstack.org:20443/v2/info
-Mainnet: http://localhost:20443/v2/info
-Local: 
+Testnet: https://stacks-node-api.testnet.stacks.co/v2/info
+Mainnet: https://stacks-node-api.stacks.co/v2/info
+Local: http://localhost:20443/v2/info
 ```
 
 -----
 
 ### Where can I learn more about how mining works?
 
-The [Stacks documentation](https://docs.blockstack.org/understand-stacks/mining) contains a high-level overview of how mining works, and the leader election process is described in more detail [in SIP-001](https://github.com/blockstack/stacks-blockchain/blob/master/sip/sip-001-burn-election.md#leader-election).
+The [Stacks documentation](https://docs.stacks.co/understand-stacks/mining) contains a high-level overview of how mining works, and the leader election process is described in more detail [in SIP-001](https://github.com/stacksgov/sips/blob/main/sips/sip-001/sip-001-burn-election.md#leader-election).
 
 -----
 
@@ -143,7 +129,11 @@ If running via the CLI, add the `burn_fee_cap` setting to the configuration unde
 
 ### How much BTC is needed to mine?
 
-The default spent by a miner is 20,000 sats per block it attempted to mine, and mainnet blocks move at the same rate as BTC blocks.
+This varies depending on how much other miners are committing per block.
+
+The default spent by a miner is 20,000 sats per block attempted to mine, and mainnet blocks are created at the same rate as Bitcoin blocks.
+
+A [mining explorer](https://www.onstacks.com/mining) is also available from Daemon Technologies with additional information.
 
 -----
 
@@ -168,13 +158,13 @@ There are some common messages from stacks-node that can be safely ignored. If y
 
 ### I have an error not covered above, what do I do?
 
-Post in the the Stacks Discord chat under #mining with more information about your configuration, the step you got stuck on, and any screenshots, if applicable. The community is really helpful!
+Post in the the [Stacks Discord](https://stacks.chat) chat under #mining with more information about your configuration, the step you got stuck on, and any screenshots, if applicable. The community is really helpful!
 
 -----
 
 ### Where do I see my STX rewards?
 
-Miners spend Bitcoin (BTC) to earn Stacks (STX), however the rewards are not immediate. It takes 100 blocks for the STX rewards to appear based on the reward cycle.
+Miners spend Bitcoin (BTC) to earn Stacks (STX), however the rewards are not immediate. It takes 100 blocks for the STX rewards to appear based on the maturity time.
 
 -----
 
@@ -200,20 +190,17 @@ By default, a folder containing the Stacks blockchain data is created in a tempo
 
 ### Where is the default working dir?
 
-The default is `/tmp` and the folder name starts with `stacks-testnet-`
+The default is `/tmp` on Mac/Linux and `C:\tmp` on Windows.
 
-C:\tmp on Windows.
+The folder name starts with `stacks-testnet-`
 
-You can add working_dir = "PATH_TO_STORAGE" under [node] in your config file, but it is safer to empty the directory before starting the node, as there are some known issues restarting with existing data.
-
-Also, this [gist from whoabuddy](https://gist.github.com/whoabuddy/033a47ad502ca30722187ed1baf3cc6e) creates a rotating backup of the working_dir on a set interval using rsync and cron. *Requires some modification*
-
+To specify a directory to be used on every run of the Stacks node, add `working_dir = "PATH_TO_STORAGE"` under the `[node]` section in the config file.
 
 -----
 
 ### Can I / should I / how do I delete the working dir data?
 
-If you are not using the working_dir setting in your config, every time you run the miner a new folder will be created in the temporary folder for the chain state and the sync progress will reset to 0. This should not use up a lot of resources however older folders can be safely deleted.
+If you are not using the `working_dir` setting in your config, every time you run the miner a new folder will be created in the temporary folder for the chain state and the sync progress will reset to 0. The older folders can be safely deleted.
 
 *Note: Linux clears the `/tmp` folder on reboot.*
 
