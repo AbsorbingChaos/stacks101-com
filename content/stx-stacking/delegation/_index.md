@@ -48,14 +48,16 @@ Delegating (or pooling) STX overcomes both issues above because the total STX lo
 
 ### How do I select a pool?
 
-A list of pool providers can be found on both [stacks.co](https://www.stacks.co/stacking) and [stacks.org](https://www.stacks.org/stacking).
+A list of pool providers can be found on [stacks.co](https://www.stacks.co/stacking) and the [Pool Registry]([https://www.stacks.org/stacking](https://stacks-pool-registry.pages.dev)).
 
 Each pool provider can determine its own rules for the pool, including how fees and payouts are handled.
 
 Be sure to research the terms before delegating to a pool, or reach out to the pool admin for specific information.
 
 ### How do I join a pool?
+Pool admins control who can join a pool. Therefore, pools have different methods to join. For open pools, you can use the Hiro Wallet.
 
+#### Hiro Desktop Wallet
 The [Hiro Desktop Wallet](https://hiro.so/wallet) supports both individual and delegated stacking.
 
 In order to delegate your STX, follow the steps below:
@@ -65,6 +67,26 @@ In order to delegate your STX, follow the steps below:
 3. Enter the STX address of the pool provider (delegatee)
 4. Enter the amount of STX to delegate
 5. Confirm by signing the transaction
+
+#### Hiro Wallet for Web
+The [Hiro Wallet for Web (Extension)](https://hiro.so/wallet) does not support stacking in the wallet. You need to use a separate web app like [Pool Registry](https://stacks-pool-registry.pages.dev/), [Plan Better](https://planbetter.org/), [Xverse Pool](https://pool.xverse.app) or [Boomboxes](https://boom.money/boomboxes).
+
+In order to delegate your STX, follow the steps below:
+
+1. Open the web application, select the pool, enter amount, etc. as specified in the web app
+2. Click on a button to sign the delegation transaction.
+3. The extension will show a popup window with the transaction details.
+4. Review the details, the contract should be the default `SP000000000000000000002Q6VF78.pox` contract or a contract specific to the pool like [Boombox Admin contract](https://github.com/boomcrypto/clarity-deployed-contracts/blob/main/contracts/SP1QK1AZ24R132C0D84EEQ8Y2JDHARDR58R72E1ZW/boombox-admin-v3.clar)
+5. Confirm by signing the transaction.
+
+#### Xverse
+The [Xverse wallet](https://www.xverse.app/) supports only the Xverse pool.
+
+In order to delegate your STX, follow the steps below:
+
+1. Select the "Earn" tab and choose "Stacks STX"
+2. Enter amount
+3. Confirm
 
 ### What is the minimum amount of STX to join a pool?
 
